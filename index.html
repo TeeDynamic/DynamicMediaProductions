@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adejumo Oluwatobi Emmanuel | Video Editor &amp; Motion Specialist | DynamicMediaPro</title>
+  <meta name="description" content="Professional video editing portfolio for creators, YouTubers, and brands. Short-form & long-form video editing that boosts retention and engagement.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://framerusercontent.com/images/IfyVU9g6oW8ER9hzMVRyaA5Wc.png">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              accent: '#38bdf8', // electric cyan
+              amber: '#f59e0b',
+              purple: '#8b5cf6'
+            },
+            dark: {
+              950: '#07080a',
+              900: '#0d0f14',
+              850: '#12151d',
+              800: '#1a1e29',
+              700: '#262c3c',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 40px -10px rgba(34, 197, 94, 0.3)',
+            'glow-cyan': '0 0 40px -10px rgba(56, 189, 248, 0.3)',
+            card: '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0d0f14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262c3c;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+
+    /* Pulse animation for WhatsApp badge */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .pulse-effect {
+      animation: pulse-ring 2.5s infinite ease-in-out;
+    }
+
+    /* Video player custom overlay */
+    .video-card:hover .video-overlay {
+      opacity: 0;
+    }
+    .video-card:hover .play-badge {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white relative min-h-screen">
+
+  <!-- Background decorative glows -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-accent/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-[35%] right-[-10%] w-[600px] h-[600px] bg-brand-purple/10 rounded-full blur-[160px]"></div>
+    <div class="absolute bottom-[10%] left-[-5%] w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-[150px]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-dark-950/80 border-b border-dark-border transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="relative w-11 h-11 rounded-xl overflow-hidden ring-2 ring-white/10 group-hover:ring-brand-accent/60 transition-all duration-300 shadow-lg">
+          <img 
+            src="https://framerusercontent.com/images/IfyVU9g6oW8ER9hzMVRyaA5Wc.png" 
+            alt="Adejumo Oluwatobi Emmanuel" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          >
+        </div>
+        <div>
+          <span class="font-extrabold text-lg tracking-tight text-white flex items-center gap-1.5">
+            DynamicMedia<span class="text-brand-accent">Pro</span>
+          </span>
+          <span class="text-xs text-slate-400 font-medium block">Adejumo Oluwatobi E.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#work" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="#vertical-showcase" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Vertical (9:16)</a>
+        <a href="#horizontal-showcase" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="monitor" class="w-4 h-4 text-brand-accent"></i> Horizontal (16:9)</a>
+        <a href="#services" class="hover:text-white transition-colors">Process</a>
+        <a href="#testimonials" class="hover:text-white transition-colors">Reviews</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQs</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="flex items-center gap-3">
+        <!-- Settings/Config button (for changing WhatsApp # or adding videos) -->
+        <button 
+          onclick="openSettingsModal()" 
+          title="Configure WhatsApp & Video Settings"
+          class="p-2.5 rounded-xl bg-dark-850 hover:bg-dark-800 text-slate-400 hover:text-white border border-dark-border transition-colors flex items-center gap-2 text-xs font-semibold"
+        >
+          <i data-lucide="sliders" class="w-4 h-4 text-brand-accent"></i>
+          <span class="hidden sm:inline">Settings</span>
+        </button>
+
+        <!-- Direct WhatsApp Header CTA -->
+        <a 
+          id="navWhatsAppBtn"
+          href="https://wa.me/2348077140068?text=Hi%20Oluwatobi,%20I%20saw%20your%20portfolio%20and%20want%20to%20work%20together!" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-semibold text-sm shadow-glow transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+        >
+          <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i>
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button 
+          onclick="toggleMobileMenu()" 
+          class="md:hidden p-2.5 rounded-xl bg-dark-850 text-slate-300 hover:text-white border border-dark-border"
+        >
+          <i data-lucide="menu" id="menuIcon" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-dark-border bg-dark-950/95 backdrop-blur-xl px-4 py-5 space-y-3">
+      <a href="#work" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">All Projects</a>
+      <a href="#vertical-showcase" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium flex items-center gap-2"><i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Vertical (9:16) – Shorts &amp; Reels</a>
+      <a href="#horizontal-showcase" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium flex items-center gap-2"><i data-lucide="monitor" class="w-4 h-4 text-brand-accent"></i> Horizontal (16:9) – Films &amp; YouTube</a>
+      <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">Editing Process</a>
+      <a href="#testimonials" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">Client Reviews</a>
+      <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">FAQs</a>
+      <div class="pt-3 border-t border-dark-border flex flex-col gap-2">
+        <button onclick="toggleMobileMenu(); openSettingsModal()" class="w-full py-2.5 rounded-lg bg-dark-850 text-slate-300 text-center font-medium border border-dark-border flex items-center justify-center gap-2">
+          <i data-lucide="sliders" class="w-4 h-4 text-brand-accent"></i> Update WhatsApp / Manage Videos
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <section class="relative z-10 pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      <!-- Status Pill -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-dark-850/80 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-medium mb-8 backdrop-blur-md shadow-inner">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-effect"></span>
+        <span>Available for New Projects &bull; Quick Turnaround</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.1] mb-6">
+        &ldquo;Great Footage Deserves a <span class="bg-gradient-to-r from-brand-accent via-emerald-400 to-green-500 bg-clip-text text-transparent">Great Edit</span>&rdquo;
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-body leading-relaxed mb-10">
+        Hi, I'm <strong class="text-white font-semibold">Oluwatobi</strong>. I turn raw footage and creative ideas into high-retention, polished videos that hook viewers and scale creator channels.
+      </p>
+
+      <!-- Hero Actions (WhatsApp CTA + Portfolio) -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-14">
+        <!-- Main WhatsApp CTA -->
+        <a 
+          id="heroWhatsAppBtn"
+          href="https://wa.me/2348077140068?text=Hi%20Oluwatobi,%20I'm%20looking%20for%20a%20video%20editor%20and%20loved%20your%20portfolio!" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-bold text-base shadow-glow transition-all duration-300 hover:scale-105 active:scale-95 group"
+        >
+          <i data-lucide="message-circle" class="w-5 h-5 fill-current group-hover:rotate-12 transition-transform"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <!-- View Work button -->
+        <a 
+          href="#work" 
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-dark-850/80 hover:bg-dark-800 text-slate-200 hover:text-white font-semibold text-base border border-dark-border transition-all duration-300 hover:border-slate-500"
+        >
+          <i data-lucide="play" class="w-4 h-4 text-brand-accent fill-brand-accent"></i>
+          <span>See My Work</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges & Social Proof -->
+      <div class="inline-flex flex-wrap items-center justify-center gap-6 sm:gap-10 py-4 px-6 rounded-2xl bg-dark-900/60 border border-dark-border backdrop-blur-md">
+        
+        <!-- Clients metric -->
+        <div class="flex items-center gap-3 text-left">
+          <div class="flex -space-x-2 overflow-hidden">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Client">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/m3YA9HpmQG8c9ThSe5XusCzYw.png" alt="Client">
+            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Client">
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white leading-tight">80+ Happy Clients</div>
+            <div class="text-xs text-slate-400">Creators &amp; Brands</div>
+          </div>
+        </div>
+
+        <div class="hidden sm:block w-px h-8 bg-dark-border"></div>
+
+        <!-- Retention rate -->
+        <div class="text-left">
+          <div class="text-sm font-bold text-brand-accent leading-tight">65%+ Avg Retention</div>
+          <div class="text-xs text-slate-400">High-Engagement Pacing</div>
+        </div>
+
+        <div class="hidden sm:block w-px h-8 bg-dark-border"></div>
+
+        <!-- Rating -->
+        <div class="text-left flex items-center gap-2">
+          <div class="flex text-amber-400">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <span class="text-xs font-semibold text-slate-300">5.0 Star Feedback</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK ACTION / VIDEO MANAGER BANNER -->
+  <section class="relative z-10 -mt-8 mb-16 max-w-5xl mx-auto px-4">
+    <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-dark-850 to-dark-900 border border-brand-accent/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-card">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-accent/10 border border-brand-accent/30 flex items-center justify-center text-brand-accent">
+          <i data-lucide="video" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white">Need to Add or Swap Videos &amp; WhatsApp Number?</h4>
+          <p class="text-xs text-slate-400">Add YouTube links, MP4s, or update your WhatsApp contact in seconds with live preview.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 w-full sm:w-auto">
+        <button 
+          onclick="openAddVideoModal()"
+          class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-brand-accent hover:bg-sky-400 text-dark-950 font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
+        >
+          <i data-lucide="plus-circle" class="w-4 h-4"></i>
+          <span>+ Add New Video</span>
+        </button>
+        <button 
+          onclick="openSettingsModal()"
+          class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-dark-700 hover:bg-dark-600 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition-colors"
+        >
+          <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+          <span>WhatsApp #</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="work" class="relative z-10 py-16 scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Showcase</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Some Of My Best Works</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
+            From viral vertical reels to long-form storytelling edits designed for maximum watch time and conversion.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 mt-6 md:mt-0 p-1.5 bg-dark-900 border border-dark-border rounded-xl">
+          <button 
+            onclick="switchTab('all')" 
+            id="tab-all"
+            class="tab-btn active px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-brand-accent text-dark-950"
+          >
+            All Projects
+          </button>
+          <button 
+            onclick="switchTab('vertical')" 
+            id="tab-vertical"
+            class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5"
+          >
+            <i data-lucide="smartphone" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Vertical (9:16)</span>
+          </button>
+          <button 
+            onclick="switchTab('horizontal')" 
+            id="tab-horizontal"
+            class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5"
+          >
+            <i data-lucide="monitor" class="w-3.5 h-3.5 text-brand-accent"></i>
+            <span>Horizontal (16:9)</span>
+          </button>
+          <button 
+            onclick="switchTab('commercials')" 
+            id="tab-commercials"
+            class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5"
+          >
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-purple-400"></i>
+            <span>Commercials &amp; Ads</span>
+          </button>
+          <button 
+            onclick="switchTab('events')" 
+            id="tab-events"
+            class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5"
+          >
+            <i data-lucide="party-popper" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>Event Highlights</span>
+          </button>
+          <button 
+            onclick="switchTab('youtube')" 
+            id="tab-youtube"
+            class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5"
+          >
+            <i data-lucide="youtube" class="w-3.5 h-3.5 text-red-500"></i>
+            <span>YouTube Edits</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- SHOWCASE 1: VERTICAL VIDEOS (9:16) -->
+      <div id="vertical-showcase" class="mb-24 scroll-mt-24 category-section">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-dark-border mb-8 gap-2">
+          <div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.6)]"></span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Vertical Video Showcase</h3>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">9:16 Format</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              YouTube Shorts, Instagram Reels &amp; TikToks &bull; High-retention hooks, dynamic captions &amp; motion graphics.
+            </p>
+          </div>
+          <span class="text-xs text-slate-400 flex items-center gap-1.5">
+            <i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Click to play full mobile preview
+          </span>
+        </div>
+
+        <!-- Vertical Grid: 4 columns on large screens, 9:16 aspect ratio cards -->
+        <div id="verticalGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- SHOWCASE 2: HORIZONTAL VIDEOS (16:9) -->
+      <div id="horizontal-showcase" class="scroll-mt-24 category-section">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-dark-border mb-8 gap-2">
+          <div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-3 h-3 rounded-full bg-brand-accent shadow-[0_0_12px_rgba(56,189,248,0.6)]"></span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Horizontal Video Showcase</h3>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-brand-accent/10 text-brand-accent border border-brand-accent/20">16:9 Format</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              Cinematic Event Highlights, Commercial Adverts, YouTube Documentaries &amp; Podcasts.
+            </p>
+          </div>
+          <span class="text-xs text-slate-400 flex items-center gap-1.5">
+            <i data-lucide="monitor" class="w-4 h-4 text-brand-accent"></i> Click to watch in 4K / HD
+          </span>
+        </div>
+
+        <!-- Horizontal Grid: 3 columns on large screens, 16:9 widescreen cards -->
+        <div id="horizontalGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDITING SERVICES & PROCESS -->
+  <section id="services" class="relative z-10 py-20 bg-dark-900/50 border-y border-dark-border scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">The Workflow</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">How We Turn Raw Footage Into Gold</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          A seamless, stress-free editing pipeline so you can focus 100% on recording and ideation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="p-6 rounded-2xl bg-dark-850/80 border border-dark-border hover:border-brand-accent/40 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center font-extrabold text-lg mb-4">
+            01
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Footage Transfer</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Upload your raw clips, voiceovers, or project brief via Google Drive, Dropbox, or Frame.io.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6 rounded-2xl bg-dark-850/80 border border-dark-border hover:border-emerald-500/40 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-extrabold text-lg mb-4">
+            02
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Pacing &amp; Narrative Cut</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Trimming dead air, structuring compelling retention hooks, and crafting the core rhythm.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6 rounded-2xl bg-dark-850/80 border border-dark-border hover:border-brand-purple/40 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-purple/10 text-brand-purple flex items-center justify-center font-extrabold text-lg mb-4">
+            03
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">SFX, Graphics &amp; Color</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Dynamic animated captions, kinetic motion graphics, cinematic sound design, and color grading.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-6 rounded-2xl bg-dark-850/80 border border-dark-border hover:border-amber-400/40 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center font-extrabold text-lg mb-4">
+            04
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Review &amp; Final Delivery</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Swift revisions based on your feedback and export in pristine 4K ready for immediate publishing.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT TESTIMONIALS -->
+  <section id="testimonials" class="relative z-10 py-20 scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Social Proof</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">What Creators Are Saying</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Hear from the YouTubers and brands whose content scaled with our edits.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
+          <div>
+            <div class="flex text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
+              &ldquo;Oluwatobi doubled our viewer retention within two weeks. His sense of pacing and sound design took our channel from amateur to broadcast-level quality.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
+            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Client">
+            <div>
+              <div class="text-sm font-bold text-white">David K.</div>
+              <div class="text-xs text-slate-400">Tech YouTuber (240K Subs)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
+          <div>
+            <div class="flex text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
+              &ldquo;The short-form Reels he edited for us went viral right away, generating over 1.2M views on Instagram! Fast communication on WhatsApp and lightning-fast turnaround.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
+            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/m3YA9HpmQG8c9ThSe5XusCzYw.png" alt="Client">
+            <div>
+              <div class="text-sm font-bold text-white">Sarah M.</div>
+              <div class="text-xs text-slate-400">Fitness Coach &amp; Influencer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
+          <div>
+            <div class="flex text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
+              &ldquo;Working with DynamicMediaPro has been the best investment for our production agency. Reliable, super creative with animations, and always receptive to revisions.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
+            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Client">
+            <div>
+              <div class="text-sm font-bold text-white">Marcus Vance</div>
+              <div class="text-xs text-slate-400">Media Agency Founder</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQS ACCORDION -->
+  <section id="faq" class="relative z-10 py-16 scroll-mt-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Got Questions?</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="rounded-xl bg-dark-850 border border-dark-border overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-bold text-white flex items-center justify-between hover:text-brand-accent transition-colors">
+            <span>What is your typical turnaround time?</span>
+            <i data-lucide="chevron-down" id="faq-icon-1" class="w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div id="faq-ans-1" class="hidden px-6 pb-4 text-slate-300 text-sm leading-relaxed">
+            For short-form videos (Reels/Shorts), delivery is typically within 24 to 48 hours. For long-form YouTube videos (10–20 min), average turnaround is 3 to 5 business days depending on complexity and animations.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-xl bg-dark-850 border border-dark-border overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-bold text-white flex items-center justify-between hover:text-brand-accent transition-colors">
+            <span>How do revisions work?</span>
+            <i data-lucide="chevron-down" id="faq-icon-2" class="w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div id="faq-ans-2" class="hidden px-6 pb-4 text-slate-300 text-sm leading-relaxed">
+            Every project includes 2 rounds of free revisions to ensure pacing, motion graphics, and audio match your vision perfectly.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-xl bg-dark-850 border border-dark-border overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-bold text-white flex items-center justify-between hover:text-brand-accent transition-colors">
+            <span>What software do you edit with?</span>
+            <i data-lucide="chevron-down" id="faq-icon-3" class="w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div id="faq-ans-3" class="hidden px-6 pb-4 text-slate-300 text-sm leading-relaxed">
+            I primarily use Adobe Premiere Pro and After Effects for motion graphics, alongside DaVinci Resolve Studio for professional color grading.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="rounded-xl bg-dark-850 border border-dark-border overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left font-bold text-white flex items-center justify-between hover:text-brand-accent transition-colors">
+            <span>How do we start working together?</span>
+            <i data-lucide="chevron-down" id="faq-icon-4" class="w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div id="faq-ans-4" class="hidden px-6 pb-4 text-slate-300 text-sm leading-relaxed">
+            Click the WhatsApp button below or in the header to send me a direct message! Share your channel link, video style inspiration, and footage, and we can start immediately.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BIG CALL TO ACTION SECTION (WHATSAPP FOCUSED) -->
+  <section class="relative z-10 py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="relative rounded-3xl bg-gradient-to-br from-dark-850 via-dark-900 to-dark-950 border border-emerald-500/30 p-8 sm:p-14 text-center overflow-hidden shadow-2xl">
+        
+        <!-- Glow backing -->
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-6">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+            <span>Ready to Level Up Your Content?</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 max-w-2xl mx-auto">
+            Let's Make Videos Your Audience <span class="bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">Can't Stop Watching</span>
+          </h2>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto mb-8 font-body">
+            Message me directly on WhatsApp to discuss your project, get a custom quote, or book your next batch of edits.
+          </p>
+
+          <!-- WhatsApp CTA Button -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              id="ctaWhatsAppBtn"
+              href="https://wa.me/2348077140068?text=Hi%20Oluwatobi,%20I'm%20ready%20to%20level%20up%20my%20videos.%20Let's%20work%20together!" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-extrabold text-lg shadow-glow transition-all duration-300 hover:scale-105 active:scale-95 group"
+            >
+              <i data-lucide="message-circle" class="w-6 h-6 fill-current group-hover:rotate-12 transition-transform"></i>
+              <span>Chat Directly on WhatsApp</span>
+            </a>
+          </div>
+
+          <p class="text-xs text-slate-400 mt-4 flex items-center justify-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+            <span>Instant response within a few hours</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 border-t border-dark-border bg-dark-950 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      
+      <!-- Profile & Copyright -->
+      <div class="flex items-center gap-3">
+        <img class="w-10 h-10 rounded-xl object-cover ring-1 ring-white/10" src="https://framerusercontent.com/images/IfyVU9g6oW8ER9hzMVRyaA5Wc.png" alt="Adejumo Oluwatobi Emmanuel">
+        <div>
+          <div class="font-bold text-white text-sm">DynamicMediaPro</div>
+          <div class="text-xs text-slate-400">Adejumo Oluwatobi Emmanuel &copy; <span id="currentYear"></span>. All rights reserved.</div>
+        </div>
+      </div>
+
+      <!-- Socials -->
+      <div class="flex items-center gap-6 text-sm text-slate-400 font-medium">
+        <a id="footerWhatsApp" href="https://wa.me/2348077140068" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 flex items-center gap-1.5 transition-colors">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1.5 transition-colors">
+          <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1.5 transition-colors">
+          <i data-lucide="twitter" class="w-4 h-4"></i> X/Twitter
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <!-- Tooltip bubble -->
+    <div class="hidden sm:flex items-center gap-2 bg-dark-900/90 backdrop-blur-md text-white text-xs font-semibold py-2 px-3.5 rounded-xl border border-dark-border shadow-card">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-effect"></span>
+      <span>Chat with Oluwatobi</span>
+    </div>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a 
+      id="floatingWhatsAppBtn"
+      href="https://wa.me/2348077140068?text=Hi%20Oluwatobi,%20I'm%20visiting%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white shadow-glow hover:scale-110 active:scale-95 transition-all duration-300 group"
+      title="Chat on WhatsApp"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7 fill-current group-hover:scale-110 transition-transform"></i>
+      
+      <!-- Unread indicator dot -->
+      <span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-red-500 text-[10px] font-bold text-white flex items-center justify-center ring-2 ring-dark-950">
+        1
+      </span>
+    </a>
+  </div>
+
+  <!-- VIDEO PLAYER MODAL (FOR FULLSCREEN / HD PLAYBACK) -->
+  <div id="videoModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-xl flex items-center justify-center p-4">
+    <div id="modalDialog" class="relative w-full max-w-4xl bg-dark-900 rounded-2xl border border-dark-border overflow-hidden shadow-2xl transition-all duration-300">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between p-4 border-b border-dark-border bg-dark-950/80">
+        <h4 id="modalVideoTitle" class="text-sm font-bold text-white truncate max-w-md">Video Preview</h4>
+        <div class="flex items-center gap-2">
+          <a id="modalDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-sm">
+            <i data-lucide="youtube" class="w-3.5 h-3.5"></i> <span>Watch on YouTube</span>
+          </a>
+          <button onclick="closeVideoModal()" class="p-2 text-slate-400 hover:text-white rounded-lg bg-dark-800 transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Video Container -->
+      <div id="modalVideoContainer" class="w-full aspect-video bg-black flex items-center justify-center">
+        <!-- Injected iframe or video element -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SETTINGS & WHATSAPP CONFIG MODAL -->
+  <div id="settingsModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-dark-900 rounded-2xl border border-dark-border p-6 shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-dark-border mb-5">
+        <div class="flex items-center gap-2">
+          <i data-lucide="settings" class="w-5 h-5 text-brand-accent"></i>
+          <h3 class="font-bold text-white text-base">Configure WhatsApp &amp; Portfolio</h3>
+        </div>
+        <button onclick="closeSettingsModal()" class="p-1.5 text-slate-400 hover:text-white rounded-lg bg-dark-800">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Your WhatsApp Phone Number</label>
+          <div class="relative">
+            <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">+</span>
+            <input 
+              type="text" 
+              id="cfgPhoneInput" 
+              placeholder="2348012345678 (include country code, no + or spaces)" 
+              class="w-full pl-6 pr-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
+            >
+          </div>
+          <p class="text-[11px] text-slate-400 mt-1">Example for Nigeria: <code class="text-emerald-400 font-mono">2348012345678</code></p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Default WhatsApp Message</label>
+          <input 
+            type="text" 
+            id="cfgMsgInput" 
+            placeholder="Hi Oluwatobi, I saw your portfolio and would like to discuss a project!" 
+            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
+          >
+        </div>
+
+        <div class="pt-2 flex justify-end gap-2">
+          <button onclick="closeSettingsModal()" class="px-4 py-2 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-300 text-xs font-semibold transition-colors">
+            Cancel
+          </button>
+          <button onclick="saveWhatsAppConfig()" class="px-5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition-colors flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4"></i> Save Settings
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD VIDEO MODAL -->
+  <div id="addVideoModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-dark-900 rounded-2xl border border-dark-border p-6 shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-dark-border mb-5">
+        <div class="flex items-center gap-2">
+          <i data-lucide="plus-circle" class="w-5 h-5 text-emerald-400"></i>
+          <h3 class="font-bold text-white text-base">Add New Video to Portfolio</h3>
+        </div>
+        <button onclick="closeAddVideoModal()" class="p-1.5 text-slate-400 hover:text-white rounded-lg bg-dark-800">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <form id="addVideoForm" onsubmit="handleAddNewVideo(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Format (Orientation)</label>
+          <select id="newVideoFormat" class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none">
+            <option value="vertical">📱 Vertical (9:16) – Shorts, Reels, TikTok</option>
+            <option value="horizontal">🎬 Horizontal (16:9) – Films, YouTube, Commercials</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Content Category / Genre</label>
+          <select id="newVideoCategory" class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none">
+            <option value="youtube">📺 YouTube &amp; Narrative Storytelling</option>
+            <option value="commercials">🚀 Commercials &amp; Brand Ads</option>
+            <option value="events">🎉 Event &amp; Wedding Highlights</option>
+            <option value="social">🔥 Viral Hooks &amp; Creator Edits</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Title / Client Name</label>
+          <input 
+            type="text" 
+            id="newVideoTitle" 
+            required 
+            placeholder="e.g. Viral Hook Reel for Tech Creator" 
+            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
+          >
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Source URL (Google Drive, YouTube, or MP4 link)</label>
+          <input 
+            type="url" 
+            id="newVideoUrl" 
+            required 
+            placeholder="https://drive.google.com/file/d/... or https://youtube.com/... or .mp4" 
+            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
+          >
+          <p class="text-[11px] text-emerald-400 mt-1 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+            <span>Google Drive supported! Set sharing to <strong>"Anyone with the link can view"</strong></span>
+          </p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Highlight Badge / Stats (Optional)</label>
+          <input 
+            type="text" 
+            id="newVideoBadge" 
+            placeholder="e.g. 1.2M Views or High Retention Edit" 
+            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
+          >
+        </div>
+
+        <div class="pt-2 flex justify-end gap-2">
+          <button type="button" onclick="closeAddVideoModal()" class="px-4 py-2 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-300 text-xs font-semibold transition-colors">
+            Cancel
+          </button>
+          <button type="submit" class="px-5 py-2 rounded-xl bg-brand-accent hover:bg-sky-400 text-dark-950 text-xs font-bold transition-colors flex items-center gap-1.5">
+            <i data-lucide="plus" class="w-4 h-4"></i> Add to Portfolio
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- APPLICATION JAVASCRIPT LOGIC -->
+  <script>
+    // PORTFOLIO DATA INITIALIZATION
+    // Professional Organization: Vertical (9:16) & Horizontal (16:9) with genre tagging
+    const defaultPortfolio = {
+      // Configuration
+      config: {
+        whatsappNumber: "2348077140068", // Direct WhatsApp phone number
+        defaultMessage: "Hi Oluwatobi, I saw your portfolio and would like to discuss a video project!"
+      },
+
+      // 1. VERTICAL VIDEOS (9:16 - Shorts, Reels, TikToks & Social Ads)
+      vertical: [
+        {
+          id: "vert-elephant",
+          title: "Why Do Elephants Have Such Huge Ears? 🐘",
+          category: "youtube",
+          badge: "YouTube Short",
+          youtubeId: "0uTYiQrwpb4",
+          thumbnail: "https://i.ytimg.com/vi/0uTYiQrwpb4/hqdefault.jpg",
+          format: "vertical"
+        },
+        {
+          id: "vert-lion",
+          title: "The Lion Isn’t the Strongest… Here’s Why 🦁",
+          category: "youtube",
+          badge: "Viral Hook Short",
+          youtubeId: "52o3S1E6cJU",
+          thumbnail: "https://i.ytimg.com/vi/52o3S1E6cJU/hqdefault.jpg",
+          format: "vertical"
+        },
+        {
+          id: "vert-hippo",
+          title: "Never Underestimate a Hippo 🦛",
+          category: "youtube",
+          badge: "Wildlife Narrative",
+          youtubeId: "X0--A-_waEE",
+          thumbnail: "https://i.ytimg.com/vi/X0--A-_waEE/hqdefault.jpg",
+          format: "vertical"
+        },
+        {
+          id: "vert-creator-hook",
+          title: "Viral Creator Hook - Dynamic Captions & SFX",
+          category: "social",
+          badge: "1.4M Views Reel",
+          videoUrl: "https://framerusercontent.com/assets/h9XjP478vmoXBhgkX9qFDZaTl0.mp4",
+          poster: "https://framerusercontent.com/images/7dm7jL9dBKuIfDgefnQCJHdoeg.png",
+          type: "mp4",
+          format: "vertical"
+        },
+        {
+          id: "vert-talking-head",
+          title: "High-Retention Talking Head & Pacing Cut",
+          category: "social",
+          badge: "850K Views Reel",
+          videoUrl: "https://framerusercontent.com/assets/2VcUPrMOtwE71p0Ie6bBgPxhhc.mp4",
+          poster: "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
+          type: "mp4",
+          format: "vertical"
+        },
+        {
+          id: "vert-motion-graphics",
+          title: "Kinetic Motion Graphics & Captioning Reel",
+          category: "social",
+          badge: "78% Retention",
+          videoUrl: "https://framerusercontent.com/assets/1x9zjBcoGJGYtABrcWc0HFEkNZU.mp4",
+          poster: "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
+          type: "mp4",
+          format: "vertical"
+        }
+      ],
+
+      // 2. HORIZONTAL VIDEOS (16:9 - Cinematic Events, Commercials & YouTube)
+      horizontal: [
+        {
+          id: "horiz-wedding",
+          title: "Wedding Highlights - Cinematic Film",
+          category: "events",
+          badge: "Wedding Highlight",
+          videoUrl: "https://drive.google.com/file/d/1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM/preview",
+          gDriveId: "1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM",
+          type: "gdrive",
+          poster: "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-sonora",
+          title: "Sonora - Commercial Video Advert",
+          category: "commercials",
+          badge: "Brand Commercial",
+          videoUrl: "https://drive.google.com/file/d/1lQosWmCQHMWML47PlO_qZXL2311hNC6d/preview",
+          gDriveId: "1lQosWmCQHMWML47PlO_qZXL2311hNC6d",
+          type: "gdrive",
+          poster: "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-doc",
+          title: "Documentary Style Narrative Edit",
+          category: "youtube",
+          badge: "Documentary",
+          youtubeId: "_MWHzfT5i4I",
+          thumbnail: "https://i.ytimg.com/vi_webp/_MWHzfT5i4I/maxresdefault.webp",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-edu",
+          title: "Educational Masterclass & Motion Graphics",
+          category: "youtube",
+          badge: "High Retention",
+          youtubeId: "5mBPGoumDKg",
+          thumbnail: "https://i.ytimg.com/vi_webp/5mBPGoumDKg/maxresdefault.webp",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-podcast",
+          title: "Podcast Production & Multi-Cam Sync",
+          category: "youtube",
+          badge: "Podcast Edit",
+          youtubeId: "tFp4hLnucwE",
+          thumbnail: "https://i.ytimg.com/vi_webp/tFp4hLnucwE/maxresdefault.webp",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-breakdown",
+          title: "Cinematic Talking Head & Story Breakdown",
+          category: "youtube",
+          badge: "Color Graded",
+          youtubeId: "RmQOzE9JIq0",
+          thumbnail: "https://i.ytimg.com/vi_webp/RmQOzE9JIq0/maxresdefault.webp",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-automation",
+          title: "YouTube Automation & B-Roll Narrative",
+          category: "youtube",
+          badge: "Storytelling",
+          youtubeId: "taIsswdS73c",
+          thumbnail: "https://i.ytimg.com/vi_webp/taIsswdS73c/maxresdefault.webp",
+          format: "horizontal"
+        },
+        {
+          id: "horiz-yt-vlog",
+          title: "High-Energy Vlog & Travel Cinematic",
+          category: "youtube",
+          badge: "Pacing & SFX",
+          youtubeId: "j8OrkJtSIuY",
+          thumbnail: "https://i.ytimg.com/vi_webp/j8OrkJtSIuY/sddefault.webp",
+          format: "horizontal"
+        }
+      ]
+    };
+
+    // ACTIVE FILTER STATE
+    let currentFilter = 'all';
+
+    // Load saved data or default
+    function getPortfolioData() {
+      const saved = localStorage.getItem('dynamicmediapro_data_v4');
+      if (saved) {
+        try { 
+          const parsed = JSON.parse(saved);
+          if (parsed && parsed.vertical && parsed.horizontal) {
+            return parsed;
+          }
+        } catch (e) { console.error(e); }
+      }
+      return defaultPortfolio;
+    }
+
+    function savePortfolioData(data) {
+      localStorage.setItem('dynamicmediapro_data_v4', JSON.stringify(data));
+      renderPortfolio();
+      updateWhatsAppLinks();
+    }
+
+    // UPDATE ALL WHATSAPP LINKS ON PAGE
+    function updateWhatsAppLinks() {
+      const data = getPortfolioData();
+      const phone = data.config.whatsappNumber;
+      const msg = encodeURIComponent(data.config.defaultMessage);
+      const url = `https://wa.me/${phone}?text=${msg}`;
+
+      const ids = ['navWhatsAppBtn', 'heroWhatsAppBtn', 'ctaWhatsAppBtn', 'floatingWhatsAppBtn', 'footerWhatsApp'];
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.href = url;
+      });
+    }
+
+    // HELPER: BUILD VERTICAL CARD (9:16)
+    function buildVerticalCard(video) {
+      const isGDrive = video.type === 'gdrive' || (video.videoUrl && video.videoUrl.includes('drive.google.com'));
+      const gId = video.gDriveId || (isGDrive ? (video.videoUrl.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/) || [])[1] : '');
+      const isYT = video.youtubeId || (video.videoUrl && (video.videoUrl.includes('youtube.com') || video.videoUrl.includes('youtu.be')));
+      
+      let ytId = video.youtubeId || '';
+      if (!ytId && isYT) {
+        const match = video.videoUrl.match(/(?:shorts\/|youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/);
+        ytId = (match && match[1].length === 11) ? match[1] : '';
+      }
+
+      let playType = 'mp4';
+      let playSrc = video.videoUrl;
+      if (isGDrive) {
+        playType = 'gdrive';
+        playSrc = gId || video.videoUrl;
+      } else if (isYT) {
+        playType = 'youtube';
+        playSrc = ytId;
+      }
+
+      const thumb = video.thumbnail || (ytId ? `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg` : (video.poster || 'https://framerusercontent.com/images/7dm7jL9dBKuIfDgefnQCJHdoeg.png'));
+
+      return `
+        <div class="video-card group relative bg-dark-850 rounded-2xl overflow-hidden border border-dark-border hover:border-emerald-500/50 transition-all duration-300 shadow-card flex flex-col">
+          <!-- 9:16 Vertical Container -->
+          <div 
+            class="relative w-full aspect-[9/16] bg-black overflow-hidden flex items-center justify-center cursor-pointer"
+            onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'vertical')"
+          >
+            ${isGDrive ? `
+              <iframe 
+                src="https://drive.google.com/file/d/${gId}/preview" 
+                class="w-full h-full pointer-events-none"
+                frameborder="0"
+              ></iframe>
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                <div class="w-13 h-13 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
+                </div>
+              </div>
+            ` : (isYT ? `
+              <img 
+                src="${thumb}" 
+                alt="${video.title}" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg'"
+              >
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                <div class="w-13 h-13 rounded-full bg-red-600 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
+                </div>
+              </div>
+            ` : `
+              <video 
+                id="video-player-${video.id}"
+                src="${video.videoUrl}"
+                poster="${video.poster || ''}"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onmouseenter="this.play().catch(()=>{})"
+                onmouseleave="this.pause()"
+              ></video>
+              <button 
+                onclick="event.stopPropagation(); toggleVideoSound('video-player-${video.id}', this)" 
+                class="absolute bottom-3 right-3 p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-emerald-500 transition-colors z-20"
+                title="Toggle Mute / Unmute"
+              >
+                <i data-lucide="volume-x" class="w-4 h-4 sound-icon"></i>
+              </button>
+            `)}
+
+            <!-- Top Badge -->
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-dark-950/80 backdrop-blur-md border border-white/10 text-[11px] font-bold text-emerald-400">
+              ${video.badge || 'Vertical'}
+            </div>
+
+            <!-- Remove Button -->
+            <button 
+              onclick="event.stopPropagation(); removeVideo('vertical', '${video.id}')" 
+              class="opacity-0 group-hover:opacity-100 absolute top-3 right-3 p-1.5 rounded-lg bg-red-500/80 hover:bg-red-500 text-white transition-opacity z-20"
+              title="Remove video"
+            >
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="p-4 flex-1 flex flex-col justify-between bg-dark-900/90 border-t border-dark-border">
+            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">${video.title}</h4>
+            <div class="flex items-center justify-between mt-3 pt-2 border-t border-dark-border text-xs text-slate-400">
+              <span class="flex items-center gap-1 text-[11px]">
+                <i data-lucide="${isYT ? 'youtube' : (isGDrive ? 'folder-video' : 'smartphone')}" class="w-3.5 h-3.5 ${isYT ? 'text-red-500' : 'text-emerald-400'}"></i>
+                ${isYT ? 'YouTube Short' : (isGDrive ? 'Drive Vertical' : 'Reel / 9:16')}
+              </span>
+              <button onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'vertical')" class="text-emerald-400 hover:underline font-semibold flex items-center gap-1">
+                Preview HD <i data-lucide="external-link" class="w-3 h-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // HELPER: BUILD HORIZONTAL CARD (16:9)
+    function buildHorizontalCard(video) {
+      const isGDrive = video.type === 'gdrive' || (video.videoUrl && video.videoUrl.includes('drive.google.com'));
+      const gId = video.gDriveId || (isGDrive ? (video.videoUrl.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/) || [])[1] : '');
+      const isYT = video.youtubeId || (video.videoUrl && (video.videoUrl.includes('youtube.com') || video.videoUrl.includes('youtu.be')));
+      
+      let ytId = video.youtubeId || '';
+      if (!ytId && isYT) {
+        const match = video.videoUrl.match(/(?:shorts\/|youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/);
+        ytId = (match && match[1].length === 11) ? match[1] : '';
+      }
+
+      let playType = 'mp4';
+      let playSrc = video.videoUrl;
+      if (isGDrive) {
+        playType = 'gdrive';
+        playSrc = gId || video.videoUrl;
+      } else if (isYT) {
+        playType = 'youtube';
+        playSrc = ytId;
+      }
+
+      const thumb = video.thumbnail || (ytId ? `https://i.ytimg.com/vi/${ytId}/maxresdefault.jpg` : (video.poster || 'https://framerusercontent.com/images/7dm7jL9dBKuIfDgefnQCJHdoeg.png'));
+
+      return `
+        <div class="video-card group relative bg-dark-850 rounded-2xl overflow-hidden border border-dark-border hover:border-brand-accent/50 transition-all duration-300 shadow-card flex flex-col">
+          <!-- 16:9 Aspect Video Container -->
+          <div 
+            class="relative w-full aspect-video bg-black overflow-hidden cursor-pointer"
+            onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'horizontal')"
+          >
+            ${isGDrive ? `
+              <iframe 
+                src="https://drive.google.com/file/d/${gId}/preview" 
+                class="w-full h-full pointer-events-none"
+                frameborder="0"
+              ></iframe>
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition-all">
+                <div class="w-13 h-13 rounded-full bg-emerald-500 text-white flex items-center justify-center p-3.5 shadow-glow group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
+                </div>
+              </div>
+            ` : (isYT ? `
+              <img 
+                src="${thumb}" 
+                alt="${video.title}" 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onerror="this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg'"
+              >
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition-all">
+                <div class="w-13 h-13 rounded-full bg-brand-accent text-dark-950 flex items-center justify-center p-3.5 shadow-glow-cyan group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-dark-950 ml-0.5"></i>
+                </div>
+              </div>
+            ` : `
+              <video 
+                id="video-player-${video.id}"
+                src="${video.videoUrl}"
+                poster="${video.poster || ''}"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onmouseenter="this.play().catch(()=>{})"
+                onmouseleave="this.pause()"
+              ></video>
+              <button 
+                onclick="event.stopPropagation(); toggleVideoSound('video-player-${video.id}', this)" 
+                class="absolute bottom-3 right-3 p-2.5 rounded-full bg-black/60 backdrop-blur-md text-white hover:bg-emerald-500 transition-colors z-20"
+                title="Toggle Mute / Unmute"
+              >
+                <i data-lucide="volume-x" class="w-4 h-4 sound-icon"></i>
+              </button>
+            `)}
+
+            <!-- Top Badge -->
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-dark-950/80 backdrop-blur-md border border-white/10 text-[11px] font-bold text-brand-accent">
+              ${video.badge || '16:9 Showcase'}
+            </div>
+
+            <!-- Remove Button -->
+            <button 
+              onclick="event.stopPropagation(); removeVideo('horizontal', '${video.id}')" 
+              class="opacity-0 group-hover:opacity-100 absolute top-3 right-3 p-1.5 rounded-lg bg-red-500/80 hover:bg-red-500 text-white transition-opacity z-20"
+              title="Remove video"
+            >
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="p-4 flex-1 flex flex-col justify-between bg-dark-900/90 border-t border-dark-border">
+            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-brand-accent transition-colors">${video.title}</h4>
+            <div class="flex items-center justify-between mt-3 pt-2 border-t border-dark-border text-xs text-slate-400">
+              <span class="flex items-center gap-1 text-[11px]">
+                <i data-lucide="${isGDrive ? 'folder-video' : (isYT ? 'youtube' : 'film')}" class="w-3.5 h-3.5 ${isGDrive ? 'text-emerald-400' : (isYT ? 'text-red-500' : 'text-brand-accent')}"></i>
+                ${isGDrive ? 'Google Drive' : (isYT ? 'YouTube 16:9' : 'Cinematic HD')}
+              </span>
+              <button onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'horizontal')" class="text-brand-accent hover:underline font-semibold flex items-center gap-1">
+                Watch 16:9 <i data-lucide="play-circle" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // RENDER PORTFOLIO BASED ON ACTIVE FILTER
+    function renderPortfolio() {
+      const data = getPortfolioData();
+
+      // Filter vertical items
+      let verticalItems = data.vertical || [];
+      if (currentFilter === 'horizontal') {
+        verticalItems = [];
+      } else if (['commercials', 'events', 'youtube'].includes(currentFilter)) {
+        verticalItems = verticalItems.filter(v => v.category === currentFilter);
+      }
+
+      // Filter horizontal items
+      let horizontalItems = data.horizontal || [];
+      if (currentFilter === 'vertical') {
+        horizontalItems = [];
+      } else if (['commercials', 'events', 'youtube'].includes(currentFilter)) {
+        horizontalItems = horizontalItems.filter(v => v.category === currentFilter);
+      }
+
+      // Populate Vertical Grid
+      const verticalContainer = document.getElementById('verticalGrid');
+      if (verticalContainer) {
+        if (verticalItems.length > 0) {
+          verticalContainer.innerHTML = verticalItems.map(v => buildVerticalCard(v)).join('');
+        } else {
+          verticalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No vertical videos in this category yet. Click "+ Add New Video" above to add one!</div>`;
+        }
+      }
+
+      // Populate Horizontal Grid
+      const horizontalContainer = document.getElementById('horizontalGrid');
+      if (horizontalContainer) {
+        if (horizontalItems.length > 0) {
+          horizontalContainer.innerHTML = horizontalItems.map(v => buildHorizontalCard(v)).join('');
+        } else {
+          horizontalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No horizontal videos in this category yet. Click "+ Add New Video" above to add one!</div>`;
+        }
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // TOGGLE VIDEO SOUND FOR MP4 CARDS
+    function toggleVideoSound(videoId, btn) {
+      const video = document.getElementById(videoId);
+      if (!video) return;
+      video.muted = !video.muted;
+      const icon = btn.querySelector('.sound-icon');
+      if (icon) {
+        if (video.muted) {
+          icon.setAttribute('data-lucide', 'volume-x');
+        } else {
+          icon.setAttribute('data-lucide', 'volume-2');
+          video.play().catch(()=>{});
+        }
+        if (window.lucide) lucide.createIcons();
+      }
+    }
+
+    // MODAL VIDEO PLAYER (ADAPTS TO VERTICAL 9:16 OR HORIZONTAL 16:9)
+    function playInModal(type, src, title, format) {
+      const modal = document.getElementById('videoModal');
+      const dialog = document.getElementById('modalDialog');
+      const container = document.getElementById('modalVideoContainer');
+      const titleEl = document.getElementById('modalVideoTitle');
+      
+      titleEl.innerText = title || 'Video Preview';
+
+      // Dynamic Modal Layout Sizing
+      if (format === 'vertical') {
+        dialog.className = "relative w-full max-w-sm bg-dark-900 rounded-3xl border border-emerald-500/40 overflow-hidden shadow-2xl transition-all duration-300";
+        container.className = "w-full aspect-[9/16] bg-black flex items-center justify-center";
+      } else {
+        dialog.className = "relative w-full max-w-4xl bg-dark-900 rounded-2xl border border-dark-border overflow-hidden shadow-2xl transition-all duration-300";
+        container.className = "w-full aspect-video bg-black flex items-center justify-center";
+      }
+      
+      if (type === 'gdrive' || (src && src.includes('drive.google.com'))) {
+        let gId = src;
+        const match = src.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/);
+        if (match) gId = match[1];
+        container.innerHTML = `
+          <iframe 
+            class="w-full h-full" 
+            src="https://drive.google.com/file/d/${gId}/preview" 
+            title="${title}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+          ></iframe>
+        `;
+      } else if (type === 'youtube') {
+        let ytId = src;
+        if (src.includes('youtube.com') || src.includes('youtu.be')) {
+          const match = src.match(/(?:shorts\/|youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/);
+          ytId = (match && match[1].length === 11) ? match[1] : src;
+        }
+        container.innerHTML = `
+          <iframe 
+            class="w-full h-full" 
+            src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" 
+            title="${title}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+          ></iframe>
+        `;
+      } else {
+        container.innerHTML = `
+          <video 
+            src="${src}" 
+            controls 
+            autoplay 
+            class="w-full h-full object-contain bg-black"
+          ></video>
+        `;
+      }
+
+      modal.classList.remove('hidden');
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const container = document.getElementById('modalVideoContainer');
+      container.innerHTML = '';
+      modal.classList.add('hidden');
+    }
+
+    // TAB FILTERING
+    function switchTab(tab) {
+      currentFilter = tab;
+      const verticalSec = document.getElementById('vertical-showcase');
+      const horizontalSec = document.getElementById('horizontal-showcase');
+      const tabs = ['all', 'vertical', 'horizontal', 'commercials', 'events', 'youtube'];
+
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        if (btn) {
+          if (t === tab) {
+            btn.className = "tab-btn active px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-brand-accent text-dark-950 flex items-center gap-1.5";
+          } else {
+            btn.className = "tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-400 hover:text-white flex items-center gap-1.5";
+          }
+        }
+      });
+
+      if (tab === 'vertical') {
+        verticalSec.classList.remove('hidden');
+        horizontalSec.classList.add('hidden');
+      } else if (tab === 'horizontal') {
+        verticalSec.classList.add('hidden');
+        horizontalSec.classList.remove('hidden');
+      } else {
+        verticalSec.classList.remove('hidden');
+        horizontalSec.classList.remove('hidden');
+      }
+
+      renderPortfolio();
+    }
+
+    // FAQ ACCORDION
+    function toggleFaq(num) {
+      const ans = document.getElementById(`faq-ans-${num}`);
+      const icon = document.getElementById(`faq-icon-${num}`);
+      if (!ans) return;
+
+      const isHidden = ans.classList.contains('hidden');
+      ans.classList.toggle('hidden', !isHidden);
+      icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+
+    // MOBILE MENU TOGGLE
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // SETTINGS MODAL (WHATSAPP CONFIG)
+    function openSettingsModal() {
+      const data = getPortfolioData();
+      document.getElementById('cfgPhoneInput').value = data.config.whatsappNumber || '';
+      document.getElementById('cfgMsgInput').value = data.config.defaultMessage || '';
+      document.getElementById('settingsModal').classList.remove('hidden');
+    }
+
+    function closeSettingsModal() {
+      document.getElementById('settingsModal').classList.add('hidden');
+    }
+
+    function saveWhatsAppConfig() {
+      const phone = document.getElementById('cfgPhoneInput').value.trim().replace(/[^0-9]/g, '');
+      const msg = document.getElementById('cfgMsgInput').value.trim();
+
+      if (!phone) {
+        alert("Please enter a valid phone number with country code.");
+        return;
+      }
+
+      const data = getPortfolioData();
+      data.config.whatsappNumber = phone;
+      if (msg) data.config.defaultMessage = msg;
+      savePortfolioData(data);
+      closeSettingsModal();
+      alert("WhatsApp details updated successfully!");
+    }
+
+    // ADD NEW VIDEO MODAL & HANDLER
+    function openAddVideoModal() {
+      document.getElementById('addVideoModal').classList.remove('hidden');
+    }
+
+    function closeAddVideoModal() {
+      document.getElementById('addVideoModal').classList.add('hidden');
+      document.getElementById('addVideoForm').reset();
+    }
+
+    function handleAddNewVideo(e) {
+      e.preventDefault();
+      const format = document.getElementById('newVideoFormat').value; // 'vertical' | 'horizontal'
+      const category = document.getElementById('newVideoCategory').value; // 'youtube' | 'commercials' | 'events' | 'social'
+      const title = document.getElementById('newVideoTitle').value.trim();
+      const url = document.getElementById('newVideoUrl').value.trim();
+      const defaultBadge = format === 'vertical' ? 'Vertical Short' : '16:9 Showcase';
+      const badge = document.getElementById('newVideoBadge').value.trim() || defaultBadge;
+
+      const data = getPortfolioData();
+      const newId = 'vid-' + Date.now();
+
+      // Detect Google Drive link
+      let gDriveId = '';
+      const isGDrive = url.includes('drive.google.com');
+      if (isGDrive) {
+        const match = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/);
+        gDriveId = match ? match[1] : '';
+      }
+
+      // Detect YouTube link (Supports Shorts and regular watch URLs)
+      let ytId = '';
+      if (url.includes('youtube.com') || url.includes('youtu.be')) {
+        const match = url.match(/(?:shorts\/|youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/);
+        ytId = (match && match[1].length === 11) ? match[1] : '';
+      }
+
+      const newEntry = {
+        id: newId,
+        title: title,
+        category: category,
+        badge: badge,
+        videoUrl: url,
+        youtubeId: ytId,
+        gDriveId: gDriveId,
+        format: format,
+        type: isGDrive ? "gdrive" : (ytId ? "youtube" : "mp4"),
+        thumbnail: ytId ? `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg` : ''
+      };
+
+      if (!data[format]) data[format] = [];
+      data[format].unshift(newEntry);
+
+      savePortfolioData(data);
+      closeAddVideoModal();
+      alert(`"${title}" added successfully to your ${format === 'vertical' ? 'Vertical (9:16)' : 'Horizontal (16:9)'} showcase!`);
+    }
+
+    function removeVideo(format, id) {
+      if (!confirm("Are you sure you want to remove this video from your showcase?")) return;
+      const data = getPortfolioData();
+      if (data[format]) {
+        data[format] = data[format].filter(v => v.id !== id);
+        savePortfolioData(data);
+      }
+    }
+
+    // INITIALIZATION ON PAGE LOAD
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('currentYear').innerText = new Date().getFullYear();
+      renderPortfolio();
+      updateWhatsAppLinks();
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
