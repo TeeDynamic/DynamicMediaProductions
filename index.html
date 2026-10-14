@@ -6,6 +6,14 @@
   <title>Adejumo Oluwatobi Emmanuel | Video Editor &amp; Motion Specialist | DynamicMediaPro</title>
   <meta name="description" content="Professional video editing portfolio for creators, YouTubers, and brands. Short-form & long-form video editing that boosts retention and engagement.">
 
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DynamicMediaPro | Video Editor &amp; Motion Specialist">
+  <meta property="og:description" content="Short-form and long-form video editing, motion graphics, and event videography.">
+  <meta property="og:image" content="https://framerusercontent.com/images/IfyVU9g6oW8ER9hzMVRyaA5Wc.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#07080a">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://framerusercontent.com/images/IfyVU9g6oW8ER9hzMVRyaA5Wc.png">
 
@@ -15,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -55,7 +63,7 @@
   </script>
 
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 
   <style>
     /* Custom Scrollbar */
@@ -129,21 +137,11 @@
         <a href="#vertical-showcase" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Vertical (9:16)</a>
         <a href="#horizontal-showcase" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="monitor" class="w-4 h-4 text-brand-accent"></i> Horizontal (16:9)</a>
         <a href="#services" class="hover:text-white transition-colors">Process</a>
-        <a href="#testimonials" class="hover:text-white transition-colors">Reviews</a>
         <a href="#faq" class="hover:text-white transition-colors">FAQs</a>
       </nav>
 
       <!-- Header CTAs -->
       <div class="flex items-center gap-3">
-        <!-- Settings/Config button (for changing WhatsApp # or adding videos) -->
-        <button 
-          onclick="openSettingsModal()" 
-          title="Configure WhatsApp & Video Settings"
-          class="p-2.5 rounded-xl bg-dark-850 hover:bg-dark-800 text-slate-400 hover:text-white border border-dark-border transition-colors flex items-center gap-2 text-xs font-semibold"
-        >
-          <i data-lucide="sliders" class="w-4 h-4 text-brand-accent"></i>
-          <span class="hidden sm:inline">Settings</span>
-        </button>
 
         <!-- Direct WhatsApp Header CTA -->
         <a 
@@ -174,13 +172,7 @@
       <a href="#vertical-showcase" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium flex items-center gap-2"><i data-lucide="smartphone" class="w-4 h-4 text-emerald-400"></i> Vertical (9:16) – Shorts &amp; Reels</a>
       <a href="#horizontal-showcase" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium flex items-center gap-2"><i data-lucide="monitor" class="w-4 h-4 text-brand-accent"></i> Horizontal (16:9) – Films &amp; YouTube</a>
       <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">Editing Process</a>
-      <a href="#testimonials" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">Client Reviews</a>
       <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-white font-medium">FAQs</a>
-      <div class="pt-3 border-t border-dark-border flex flex-col gap-2">
-        <button onclick="toggleMobileMenu(); openSettingsModal()" class="w-full py-2.5 rounded-lg bg-dark-850 text-slate-300 text-center font-medium border border-dark-border flex items-center justify-center gap-2">
-          <i data-lucide="sliders" class="w-4 h-4 text-brand-accent"></i> Update WhatsApp / Manage Videos
-        </button>
-      </div>
     </div>
   </header>
 
@@ -228,77 +220,13 @@
         </a>
       </div>
 
-      <!-- Trust Badges & Social Proof -->
-      <div class="inline-flex flex-wrap items-center justify-center gap-6 sm:gap-10 py-4 px-6 rounded-2xl bg-dark-900/60 border border-dark-border backdrop-blur-md">
-        
-        <!-- Clients metric -->
-        <div class="flex items-center gap-3 text-left">
-          <div class="flex -space-x-2 overflow-hidden">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Client">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/m3YA9HpmQG8c9ThSe5XusCzYw.png" alt="Client">
-            <img class="inline-block h-9 w-9 rounded-full ring-2 ring-dark-950 object-cover" src="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Client">
-          </div>
-          <div>
-            <div class="text-sm font-bold text-white leading-tight">80+ Happy Clients</div>
-            <div class="text-xs text-slate-400">Creators &amp; Brands</div>
-          </div>
-        </div>
-
-        <div class="hidden sm:block w-px h-8 bg-dark-border"></div>
-
-        <!-- Retention rate -->
-        <div class="text-left">
-          <div class="text-sm font-bold text-brand-accent leading-tight">65%+ Avg Retention</div>
-          <div class="text-xs text-slate-400">High-Engagement Pacing</div>
-        </div>
-
-        <div class="hidden sm:block w-px h-8 bg-dark-border"></div>
-
-        <!-- Rating -->
-        <div class="text-left flex items-center gap-2">
-          <div class="flex text-amber-400">
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-          </div>
-          <span class="text-xs font-semibold text-slate-300">5.0 Star Feedback</span>
-        </div>
-
+      <!-- Services strip -->
+      <div class="inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-4 px-6 rounded-2xl bg-dark-900/60 border border-dark-border backdrop-blur-md text-sm font-semibold text-slate-200">
+        <span class="flex items-center gap-2"><i data-lucide="scissors" class="w-4 h-4 text-brand-accent"></i> Video Editing</span>
+        <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i> Motion Graphics</span>
+        <span class="flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4 text-emerald-400"></i> Event Videography</span>
       </div>
 
-    </div>
-  </section>
-
-  <!-- QUICK ACTION / VIDEO MANAGER BANNER -->
-  <section class="relative z-10 -mt-8 mb-16 max-w-5xl mx-auto px-4">
-    <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-dark-850 to-dark-900 border border-brand-accent/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-card">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-brand-accent/10 border border-brand-accent/30 flex items-center justify-center text-brand-accent">
-          <i data-lucide="video" class="w-5 h-5"></i>
-        </div>
-        <div>
-          <h4 class="text-sm font-bold text-white">Need to Add or Swap Videos &amp; WhatsApp Number?</h4>
-          <p class="text-xs text-slate-400">Add YouTube links, MP4s, or update your WhatsApp contact in seconds with live preview.</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 w-full sm:w-auto">
-        <button 
-          onclick="openAddVideoModal()"
-          class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-brand-accent hover:bg-sky-400 text-dark-950 font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
-        >
-          <i data-lucide="plus-circle" class="w-4 h-4"></i>
-          <span>+ Add New Video</span>
-        </button>
-        <button 
-          onclick="openSettingsModal()"
-          class="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-dark-700 hover:bg-dark-600 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition-colors"
-        >
-          <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
-          <span>WhatsApp #</span>
-        </button>
-      </div>
     </div>
   </section>
 
@@ -482,94 +410,6 @@
     </div>
   </section>
 
-  <!-- CLIENT TESTIMONIALS -->
-  <section id="testimonials" class="relative z-10 py-20 scroll-mt-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Social Proof</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">What Creators Are Saying</h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-2">
-          Hear from the YouTubers and brands whose content scaled with our edits.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Review 1 -->
-        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
-          <div>
-            <div class="flex text-amber-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
-              &ldquo;Oluwatobi doubled our viewer retention within two weeks. His sense of pacing and sound design took our channel from amateur to broadcast-level quality.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
-            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Client">
-            <div>
-              <div class="text-sm font-bold text-white">David K.</div>
-              <div class="text-xs text-slate-400">Tech YouTuber (240K Subs)</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
-          <div>
-            <div class="flex text-amber-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
-              &ldquo;The short-form Reels he edited for us went viral right away, generating over 1.2M views on Instagram! Fast communication on WhatsApp and lightning-fast turnaround.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
-            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/m3YA9HpmQG8c9ThSe5XusCzYw.png" alt="Client">
-            <div>
-              <div class="text-sm font-bold text-white">Sarah M.</div>
-              <div class="text-xs text-slate-400">Fitness Coach &amp; Influencer</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="p-6 rounded-2xl bg-dark-850 border border-dark-border flex flex-col justify-between shadow-card">
-          <div>
-            <div class="flex text-amber-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed mb-6">
-              &ldquo;Working with DynamicMediaPro has been the best investment for our production agency. Reliable, super creative with animations, and always receptive to revisions.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
-            <img class="w-10 h-10 rounded-full object-cover" src="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Client">
-            <div>
-              <div class="text-sm font-bold text-white">Marcus Vance</div>
-              <div class="text-xs text-slate-400">Media Agency Founder</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
   <!-- FAQS ACCORDION -->
   <section id="faq" class="relative z-10 py-16 scroll-mt-20">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -694,12 +534,6 @@
         <a id="footerWhatsApp" href="https://wa.me/2348077140068" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 flex items-center gap-1.5 transition-colors">
           <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1.5 transition-colors">
-          <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
-        </a>
-        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1.5 transition-colors">
-          <i data-lucide="twitter" class="w-4 h-4"></i> X/Twitter
-        </a>
       </div>
 
     </div>
@@ -723,11 +557,6 @@
       title="Chat on WhatsApp"
     >
       <i data-lucide="message-circle" class="w-7 h-7 fill-current group-hover:scale-110 transition-transform"></i>
-      
-      <!-- Unread indicator dot -->
-      <span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-red-500 text-[10px] font-bold text-white flex items-center justify-center ring-2 ring-dark-950">
-        1
-      </span>
     </a>
   </div>
 
@@ -753,324 +582,250 @@
     </div>
   </div>
 
-  <!-- SETTINGS & WHATSAPP CONFIG MODAL -->
-  <div id="settingsModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="relative w-full max-w-lg bg-dark-900 rounded-2xl border border-dark-border p-6 shadow-2xl">
-      <div class="flex items-center justify-between pb-4 border-b border-dark-border mb-5">
-        <div class="flex items-center gap-2">
-          <i data-lucide="settings" class="w-5 h-5 text-brand-accent"></i>
-          <h3 class="font-bold text-white text-base">Configure WhatsApp &amp; Portfolio</h3>
-        </div>
-        <button onclick="closeSettingsModal()" class="p-1.5 text-slate-400 hover:text-white rounded-lg bg-dark-800">
-          <i data-lucide="x" class="w-4 h-4"></i>
-        </button>
-      </div>
-
-      <div class="space-y-4">
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Your WhatsApp Phone Number</label>
-          <div class="relative">
-            <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-mono">+</span>
-            <input 
-              type="text" 
-              id="cfgPhoneInput" 
-              placeholder="2348012345678 (include country code, no + or spaces)" 
-              class="w-full pl-6 pr-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
-            >
-          </div>
-          <p class="text-[11px] text-slate-400 mt-1">Example for Nigeria: <code class="text-emerald-400 font-mono">2348012345678</code></p>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Default WhatsApp Message</label>
-          <input 
-            type="text" 
-            id="cfgMsgInput" 
-            placeholder="Hi Oluwatobi, I saw your portfolio and would like to discuss a project!" 
-            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
-          >
-        </div>
-
-        <div class="pt-2 flex justify-end gap-2">
-          <button onclick="closeSettingsModal()" class="px-4 py-2 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-300 text-xs font-semibold transition-colors">
-            Cancel
-          </button>
-          <button onclick="saveWhatsAppConfig()" class="px-5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition-colors flex items-center gap-1.5">
-            <i data-lucide="check" class="w-4 h-4"></i> Save Settings
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ADD VIDEO MODAL -->
-  <div id="addVideoModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="relative w-full max-w-lg bg-dark-900 rounded-2xl border border-dark-border p-6 shadow-2xl">
-      <div class="flex items-center justify-between pb-4 border-b border-dark-border mb-5">
-        <div class="flex items-center gap-2">
-          <i data-lucide="plus-circle" class="w-5 h-5 text-emerald-400"></i>
-          <h3 class="font-bold text-white text-base">Add New Video to Portfolio</h3>
-        </div>
-        <button onclick="closeAddVideoModal()" class="p-1.5 text-slate-400 hover:text-white rounded-lg bg-dark-800">
-          <i data-lucide="x" class="w-4 h-4"></i>
-        </button>
-      </div>
-
-      <form id="addVideoForm" onsubmit="handleAddNewVideo(event)" class="space-y-4">
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Format (Orientation)</label>
-          <select id="newVideoFormat" class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none">
-            <option value="vertical">📱 Vertical (9:16) – Shorts, Reels, TikTok</option>
-            <option value="horizontal">🎬 Horizontal (16:9) – Films, YouTube, Commercials</option>
-          </select>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Content Category / Genre</label>
-          <select id="newVideoCategory" class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none">
-            <option value="youtube">📺 YouTube &amp; Narrative Storytelling</option>
-            <option value="commercials">🚀 Commercials &amp; Brand Ads</option>
-            <option value="events">🎉 Event &amp; Wedding Highlights</option>
-            <option value="social">🔥 Viral Hooks &amp; Creator Edits</option>
-          </select>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Title / Client Name</label>
-          <input 
-            type="text" 
-            id="newVideoTitle" 
-            required 
-            placeholder="e.g. Viral Hook Reel for Tech Creator" 
-            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
-          >
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Video Source URL (Google Drive, YouTube, or MP4 link)</label>
-          <input 
-            type="url" 
-            id="newVideoUrl" 
-            required 
-            placeholder="https://drive.google.com/file/d/... or https://youtube.com/... or .mp4" 
-            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
-          >
-          <p class="text-[11px] text-emerald-400 mt-1 flex items-center gap-1">
-            <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
-            <span>Google Drive supported! Set sharing to <strong>"Anyone with the link can view"</strong></span>
-          </p>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1">Highlight Badge / Stats (Optional)</label>
-          <input 
-            type="text" 
-            id="newVideoBadge" 
-            placeholder="e.g. 1.2M Views or High Retention Edit" 
-            class="w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none"
-          >
-        </div>
-
-        <div class="pt-2 flex justify-end gap-2">
-          <button type="button" onclick="closeAddVideoModal()" class="px-4 py-2 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-300 text-xs font-semibold transition-colors">
-            Cancel
-          </button>
-          <button type="submit" class="px-5 py-2 rounded-xl bg-brand-accent hover:bg-sky-400 text-dark-950 text-xs font-bold transition-colors flex items-center gap-1.5">
-            <i data-lucide="plus" class="w-4 h-4"></i> Add to Portfolio
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
+  <!-- Portfolio videos (edit this file, or use ?edit mode and export) -->
+  <script src="videos.js"></script>
 
   <!-- APPLICATION JAVASCRIPT LOGIC -->
   <script>
     // PORTFOLIO DATA INITIALIZATION
     // Professional Organization: Vertical (9:16) & Horizontal (16:9) with genre tagging
-    const defaultPortfolio = {
-      // Configuration
-      config: {
-        whatsappNumber: "2348077140068", // Direct WhatsApp phone number
-        defaultMessage: "Hi Oluwatobi, I saw your portfolio and would like to discuss a video project!"
-      },
-
-      // 1. VERTICAL VIDEOS (9:16 - Shorts, Reels, TikToks & Social Ads)
-      vertical: [
-        {
-          id: "vert-elephant",
-          title: "Why Do Elephants Have Such Huge Ears? 🐘",
-          category: "youtube",
-          badge: "YouTube Short",
-          youtubeId: "0uTYiQrwpb4",
-          thumbnail: "https://i.ytimg.com/vi/0uTYiQrwpb4/hqdefault.jpg",
-          format: "vertical"
-        },
-        {
-          id: "vert-lion",
-          title: "The Lion Isn’t the Strongest… Here’s Why 🦁",
-          category: "youtube",
-          badge: "Viral Hook Short",
-          youtubeId: "52o3S1E6cJU",
-          thumbnail: "https://i.ytimg.com/vi/52o3S1E6cJU/hqdefault.jpg",
-          format: "vertical"
-        },
-        {
-          id: "vert-hippo",
-          title: "Never Underestimate a Hippo 🦛",
-          category: "youtube",
-          badge: "Wildlife Narrative",
-          youtubeId: "X0--A-_waEE",
-          thumbnail: "https://i.ytimg.com/vi/X0--A-_waEE/hqdefault.jpg",
-          format: "vertical"
-        },
-        {
-          id: "vert-creator-hook",
-          title: "Viral Creator Hook - Dynamic Captions & SFX",
-          category: "social",
-          badge: "1.4M Views Reel",
-          videoUrl: "https://framerusercontent.com/assets/h9XjP478vmoXBhgkX9qFDZaTl0.mp4",
-          poster: "https://framerusercontent.com/images/7dm7jL9dBKuIfDgefnQCJHdoeg.png",
-          type: "mp4",
-          format: "vertical"
-        },
-        {
-          id: "vert-talking-head",
-          title: "High-Retention Talking Head & Pacing Cut",
-          category: "social",
-          badge: "850K Views Reel",
-          videoUrl: "https://framerusercontent.com/assets/2VcUPrMOtwE71p0Ie6bBgPxhhc.mp4",
-          poster: "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
-          type: "mp4",
-          format: "vertical"
-        },
-        {
-          id: "vert-motion-graphics",
-          title: "Kinetic Motion Graphics & Captioning Reel",
-          category: "social",
-          badge: "78% Retention",
-          videoUrl: "https://framerusercontent.com/assets/1x9zjBcoGJGYtABrcWc0HFEkNZU.mp4",
-          poster: "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
-          type: "mp4",
-          format: "vertical"
-        }
-      ],
-
-      // 2. HORIZONTAL VIDEOS (16:9 - Cinematic Events, Commercials & YouTube)
-      horizontal: [
-        {
-          id: "horiz-wedding",
-          title: "Wedding Highlights - Cinematic Film",
-          category: "events",
-          badge: "Wedding Highlight",
-          videoUrl: "https://drive.google.com/file/d/1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM/preview",
-          gDriveId: "1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM",
-          type: "gdrive",
-          poster: "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-sonora",
-          title: "Sonora - Commercial Video Advert",
-          category: "commercials",
-          badge: "Brand Commercial",
-          videoUrl: "https://drive.google.com/file/d/1lQosWmCQHMWML47PlO_qZXL2311hNC6d/preview",
-          gDriveId: "1lQosWmCQHMWML47PlO_qZXL2311hNC6d",
-          type: "gdrive",
-          poster: "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-doc",
-          title: "Documentary Style Narrative Edit",
-          category: "youtube",
-          badge: "Documentary",
-          youtubeId: "_MWHzfT5i4I",
-          thumbnail: "https://i.ytimg.com/vi_webp/_MWHzfT5i4I/maxresdefault.webp",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-edu",
-          title: "Educational Masterclass & Motion Graphics",
-          category: "youtube",
-          badge: "High Retention",
-          youtubeId: "5mBPGoumDKg",
-          thumbnail: "https://i.ytimg.com/vi_webp/5mBPGoumDKg/maxresdefault.webp",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-podcast",
-          title: "Podcast Production & Multi-Cam Sync",
-          category: "youtube",
-          badge: "Podcast Edit",
-          youtubeId: "tFp4hLnucwE",
-          thumbnail: "https://i.ytimg.com/vi_webp/tFp4hLnucwE/maxresdefault.webp",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-breakdown",
-          title: "Cinematic Talking Head & Story Breakdown",
-          category: "youtube",
-          badge: "Color Graded",
-          youtubeId: "RmQOzE9JIq0",
-          thumbnail: "https://i.ytimg.com/vi_webp/RmQOzE9JIq0/maxresdefault.webp",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-automation",
-          title: "YouTube Automation & B-Roll Narrative",
-          category: "youtube",
-          badge: "Storytelling",
-          youtubeId: "taIsswdS73c",
-          thumbnail: "https://i.ytimg.com/vi_webp/taIsswdS73c/maxresdefault.webp",
-          format: "horizontal"
-        },
-        {
-          id: "horiz-yt-vlog",
-          title: "High-Energy Vlog & Travel Cinematic",
-          category: "youtube",
-          badge: "Pacing & SFX",
-          youtubeId: "j8OrkJtSIuY",
-          thumbnail: "https://i.ytimg.com/vi_webp/j8OrkJtSIuY/sddefault.webp",
-          format: "horizontal"
-        }
-      ]
-    };
+    const defaultPortfolio = window.PORTFOLIO || { config: {}, vertical: [], horizontal: [] };
 
     // ACTIVE FILTER STATE
     let currentFilter = 'all';
 
-    // Load saved data or default
+    // EDIT MODE
+    // Visitors always see videos.js. Open the site with ?edit to edit a private draft
+    // (kept in this browser only), then use "Export videos.js" and upload it to GitHub.
+    const EDIT = new URLSearchParams(location.search).has('edit');
+    const DRAFT_KEY = 'dynamicmediapro_draft_v1';
+
+    function esc(str) {
+      return String(str == null ? '' : str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    // For values placed inside a single-quoted JS string inside an HTML attribute
+    function jsArg(str) {
+      return esc(String(str == null ? '' : str).replace(/\\/g, '\\\\').replace(/'/g, "\\'"));
+    }
+    function clone(o) { return JSON.parse(JSON.stringify(o)); }
+
+    function getDraft() {
+      try {
+        const d = JSON.parse(localStorage.getItem(DRAFT_KEY));
+        if (d && Array.isArray(d.vertical) && Array.isArray(d.horizontal)) return d;
+      } catch (e) {}
+      return null;
+    }
+
     function getPortfolioData() {
-      const saved = localStorage.getItem('dynamicmediapro_data_v4');
-      if (saved) {
-        try { 
-          const parsed = JSON.parse(saved);
-          if (parsed && parsed.vertical && parsed.horizontal) {
-            return parsed;
-          }
-        } catch (e) { console.error(e); }
-      }
+      if (EDIT) { const d = getDraft(); if (d) return d; }
       return defaultPortfolio;
     }
 
-    function savePortfolioData(data) {
-      localStorage.setItem('dynamicmediapro_data_v4', JSON.stringify(data));
+    function saveDraft(d) {
+      try { localStorage.setItem(DRAFT_KEY, JSON.stringify(d)); }
+      catch (e) { alert('Could not save the draft in this browser.'); }
       renderPortfolio();
-      updateWhatsAppLinks();
+      updateEditBar();
     }
 
-    // UPDATE ALL WHATSAPP LINKS ON PAGE
-    function updateWhatsAppLinks() {
-      const data = getPortfolioData();
-      const phone = data.config.whatsappNumber;
-      const msg = encodeURIComponent(data.config.defaultMessage);
-      const url = `https://wa.me/${phone}?text=${msg}`;
+    function editControls(format, id) {
+      if (!EDIT) return '';
+      const b = 'p-1.5 rounded-lg bg-dark-950/85 hover:bg-brand-accent hover:text-dark-950 text-white transition-colors';
+      return `
+        <div class="absolute top-3 right-3 z-30 flex gap-1" onclick="event.stopPropagation()">
+          <button onclick="event.stopPropagation(); moveVideo('${format}', '${jsArg(id)}', -1)" class="${b}" title="Move earlier"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></button>
+          <button onclick="event.stopPropagation(); moveVideo('${format}', '${jsArg(id)}', 1)" class="${b}" title="Move later"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+          <button onclick="event.stopPropagation(); openVideoEditor('${format}', '${jsArg(id)}')" class="${b}" title="Edit"><i data-lucide="pencil" class="w-3.5 h-3.5"></i></button>
+          <button onclick="event.stopPropagation(); removeVideo('${format}', '${jsArg(id)}')" class="p-1.5 rounded-lg bg-red-600/90 hover:bg-red-500 text-white transition-colors" title="Remove"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+        </div>`;
+    }
 
-      const ids = ['navWhatsAppBtn', 'heroWhatsAppBtn', 'ctaWhatsAppBtn', 'floatingWhatsAppBtn', 'footerWhatsApp'];
-      ids.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.href = url;
-      });
+    function parseVideoUrl(url) {
+      url = (url || '').trim();
+      if (!url) return null;
+      if (url.includes('drive.google.com')) {
+        const m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/) || url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+        if (!m) return null;
+        return { type: 'gdrive', gDriveId: m[1], videoUrl: `https://drive.google.com/file/d/${m[1]}/preview` };
+      }
+      if (/youtube\.com|youtu\.be/.test(url)) {
+        const m = url.match(/(?:shorts\/|youtu\.be\/|embed\/|watch\?v=|v\/)([A-Za-z0-9_-]{11})/);
+        if (!m) return null;
+        return { type: 'youtube', youtubeId: m[1], thumbnail: `https://i.ytimg.com/vi/${m[1]}/hqdefault.jpg` };
+      }
+      if (/^https?:\/\/.+\.(mp4|webm|mov|m4v|ogv)([?#].*)?$/i.test(url)) return { type: 'mp4', videoUrl: url };
+      return null;
+    }
+
+    function videoToUrl(v) {
+      if (v.gDriveId) return `https://drive.google.com/file/d/${v.gDriveId}/view`;
+      if (v.youtubeId) return `https://youtu.be/${v.youtubeId}`;
+      return v.videoUrl || '';
+    }
+
+    let editorTarget = null; // { format, id } when editing, null when adding
+
+    function openVideoEditor(format, id) {
+      const d = getPortfolioData();
+      const v = id ? (d[format] || []).find(x => x.id === id) : null;
+      editorTarget = v ? { format, id } : null;
+      document.getElementById('edHeading').textContent = v ? 'Edit video' : 'Add a video';
+      document.getElementById('edFormat').value = format || 'horizontal';
+      document.getElementById('edCategory').value = v ? v.category || 'social' : 'social';
+      document.getElementById('edTitle').value = v ? v.title || '' : '';
+      document.getElementById('edUrl').value = v ? videoToUrl(v) : '';
+      document.getElementById('edBadge').value = v ? v.badge || '' : '';
+      document.getElementById('editorModal').classList.remove('hidden');
+    }
+
+    function closeVideoEditor() {
+      document.getElementById('editorModal').classList.add('hidden');
+      editorTarget = null;
+    }
+
+    function saveVideoEditor(e) {
+      e.preventDefault();
+      const format = document.getElementById('edFormat').value;
+      const category = document.getElementById('edCategory').value;
+      const title = document.getElementById('edTitle').value.trim();
+      const url = document.getElementById('edUrl').value;
+      const badge = document.getElementById('edBadge').value.trim();
+      const parsed = parseVideoUrl(url);
+      if (!title) { alert('Please enter a title.'); return; }
+      if (!parsed) { alert('That link was not recognised. Paste a Google Drive link, a YouTube link, or a direct link ending in .mp4.'); return; }
+
+      const d = clone(getPortfolioData());
+      let old = null, oldIndex = -1;
+      if (editorTarget) {
+        oldIndex = d[editorTarget.format].findIndex(v => v.id === editorTarget.id);
+        old = oldIndex >= 0 ? d[editorTarget.format][oldIndex] : null;
+      }
+      const entry = Object.assign({
+        id: old ? old.id : 'vid-' + Date.now(),
+        title, category,
+        badge: badge || (format === 'vertical' ? 'Vertical Short' : '16:9 Showcase'),
+        format
+      }, parsed);
+      if (old && old.poster && parsed.type === 'mp4' && old.videoUrl === parsed.videoUrl) entry.poster = old.poster;
+
+      if (old && editorTarget.format === format) {
+        d[format][oldIndex] = entry;
+      } else {
+        if (old) d[editorTarget.format].splice(oldIndex, 1);
+        if (!d[format]) d[format] = [];
+        d[format].unshift(entry);
+      }
+      saveDraft(d);
+      closeVideoEditor();
+    }
+
+    function removeVideo(format, id) {
+      if (!confirm('Remove this video from the draft?')) return;
+      const d = clone(getPortfolioData());
+      d[format] = d[format].filter(v => v.id !== id);
+      saveDraft(d);
+    }
+
+    function moveVideo(format, id, dir) {
+      const d = clone(getPortfolioData());
+      const list = d[format];
+      const i = list.findIndex(v => v.id === id);
+      const j = i + dir;
+      if (i < 0 || j < 0 || j >= list.length) return;
+      [list[i], list[j]] = [list[j], list[i]];
+      saveDraft(d);
+    }
+
+    function exportVideosJs() {
+      const d = getPortfolioData();
+      const text = '// DynamicMediaPro portfolio videos (exported from edit mode).\n// Upload this file to GitHub to replace videos.js.\nwindow.PORTFOLIO = ' + JSON.stringify(d, null, 2) + ';\n';
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([text], { type: 'text/javascript' }));
+      a.download = 'videos.js';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    }
+
+    function discardDraft() {
+      if (!confirm('Discard all draft changes and go back to the published videos?')) return;
+      localStorage.removeItem(DRAFT_KEY);
+      renderPortfolio();
+      updateEditBar();
+    }
+
+    function exitEditMode() {
+      location.href = location.pathname;
+    }
+
+    function updateEditBar() {
+      const el = document.getElementById('editStatus');
+      if (el) el.textContent = getDraft() ? 'Draft has unpublished changes' : 'Showing published videos';
+    }
+
+    function initEditMode() {
+      const inputCls = 'w-full px-3 py-2 bg-dark-850 border border-dark-border rounded-xl text-white text-sm focus:border-brand-accent focus:outline-none';
+      const labelCls = 'block text-xs font-semibold text-slate-300 mb-1';
+      document.body.insertAdjacentHTML('beforeend', `
+        <div id="editBar" class="fixed bottom-6 left-4 z-50 max-w-[calc(100vw-2rem)] p-3 rounded-2xl bg-dark-900/95 backdrop-blur-md border border-brand-accent/40 shadow-card">
+          <div class="flex items-center gap-2 mb-2 text-xs font-bold text-brand-accent"><i data-lucide="pencil" class="w-3.5 h-3.5"></i> Edit mode <span id="editStatus" class="font-medium text-slate-400"></span></div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="openVideoEditor('horizontal', null)" class="px-3 py-1.5 rounded-lg bg-brand-accent text-dark-950 text-xs font-bold">+ Add video</button>
+            <button onclick="exportVideosJs()" class="px-3 py-1.5 rounded-lg bg-emerald-500 text-white text-xs font-bold">Export videos.js</button>
+            <button onclick="discardDraft()" class="px-3 py-1.5 rounded-lg bg-dark-800 text-slate-300 text-xs font-semibold">Discard draft</button>
+            <button onclick="exitEditMode()" class="px-3 py-1.5 rounded-lg bg-dark-800 text-slate-300 text-xs font-semibold">Exit</button>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-2 max-w-xs">Changes here are private to this browser. Export, then upload videos.js to GitHub to publish.</p>
+        </div>
+
+        <div id="editorModal" class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div class="relative w-full max-w-lg bg-dark-900 rounded-2xl border border-dark-border p-6 shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between pb-4 border-b border-dark-border mb-5">
+              <h3 id="edHeading" class="font-bold text-white text-base">Add a video</h3>
+              <button type="button" onclick="closeVideoEditor()" class="p-1.5 text-slate-400 hover:text-white rounded-lg bg-dark-800"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+            <form onsubmit="saveVideoEditor(event)" class="space-y-4">
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="${labelCls}" for="edFormat">Format</label>
+                  <select id="edFormat" class="${inputCls}">
+                    <option value="horizontal">Horizontal (16:9)</option>
+                    <option value="vertical">Vertical (9:16)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="${labelCls}" for="edCategory">Category</label>
+                  <select id="edCategory" class="${inputCls}">
+                    <option value="events">Event Highlights</option>
+                    <option value="commercials">Commercials &amp; Ads</option>
+                    <option value="youtube">YouTube Edits</option>
+                    <option value="social">Other (shows under All only)</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="${labelCls}" for="edTitle">Title</label>
+                <input id="edTitle" type="text" required class="${inputCls}" placeholder="e.g. Wedding Highlights">
+              </div>
+              <div>
+                <label class="${labelCls}" for="edUrl">Video link (Google Drive, YouTube, or .mp4)</label>
+                <input id="edUrl" type="url" required class="${inputCls}" placeholder="https://drive.google.com/file/d/.../view">
+                <p class="text-[11px] text-slate-400 mt-1">Google Drive files must be shared as "Anyone with the link can view".</p>
+              </div>
+              <div>
+                <label class="${labelCls}" for="edBadge">Badge (optional)</label>
+                <input id="edBadge" type="text" class="${inputCls}" placeholder="e.g. Wedding Highlight">
+              </div>
+              <div class="pt-2 flex justify-end gap-2">
+                <button type="button" onclick="closeVideoEditor()" class="px-4 py-2 rounded-xl bg-dark-800 text-slate-300 text-xs font-semibold">Cancel</button>
+                <button type="submit" class="px-5 py-2 rounded-xl bg-brand-accent text-dark-950 text-xs font-bold">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>`);
+      updateEditBar();
     }
 
     // HELPER: BUILD VERTICAL CARD (9:16)
@@ -1102,28 +857,25 @@
           <!-- 9:16 Vertical Container -->
           <div 
             class="relative w-full aspect-[9/16] bg-black overflow-hidden flex items-center justify-center cursor-pointer"
-            onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'vertical')"
+            onclick="playInModal('${playType}', '${jsArg(playSrc)}', '${jsArg(video.title)}', 'vertical')"
           >
             ${isGDrive ? `
-              <iframe 
-                src="https://drive.google.com/file/d/${gId}/preview" 
-                class="w-full h-full pointer-events-none"
-                frameborder="0"
-              ></iframe>
+              <div class="absolute inset-0 bg-gradient-to-br from-dark-800 to-dark-950 flex items-center justify-center"><i data-lucide="film" class="w-10 h-10 text-slate-600"></i></div>
+              <img src="https://drive.google.com/thumbnail?id=${gId}&sz=w800" alt="${esc(video.title)}" loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'">
               <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                <div class="w-13 h-13 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
+                <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
                   <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
                 </div>
               </div>
             ` : (isYT ? `
               <img 
                 src="${thumb}" 
-                alt="${video.title}" 
+                alt="${esc(video.title)}" 
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onerror="this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg'"
               >
               <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                <div class="w-13 h-13 rounded-full bg-red-600 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
+                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
                   <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
                 </div>
               </div>
@@ -1149,30 +901,23 @@
               </button>
             `)}
 
+            ${editControls('vertical', video.id)}
+
             <!-- Top Badge -->
             <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-dark-950/80 backdrop-blur-md border border-white/10 text-[11px] font-bold text-emerald-400">
-              ${video.badge || 'Vertical'}
+              ${esc(video.badge || 'Vertical')}
             </div>
-
-            <!-- Remove Button -->
-            <button 
-              onclick="event.stopPropagation(); removeVideo('vertical', '${video.id}')" 
-              class="opacity-0 group-hover:opacity-100 absolute top-3 right-3 p-1.5 rounded-lg bg-red-500/80 hover:bg-red-500 text-white transition-opacity z-20"
-              title="Remove video"
-            >
-              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
-            </button>
           </div>
 
           <!-- Bottom Info -->
           <div class="p-4 flex-1 flex flex-col justify-between bg-dark-900/90 border-t border-dark-border">
-            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">${video.title}</h4>
+            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">${esc(video.title)}</h4>
             <div class="flex items-center justify-between mt-3 pt-2 border-t border-dark-border text-xs text-slate-400">
               <span class="flex items-center gap-1 text-[11px]">
                 <i data-lucide="${isYT ? 'youtube' : (isGDrive ? 'folder-video' : 'smartphone')}" class="w-3.5 h-3.5 ${isYT ? 'text-red-500' : 'text-emerald-400'}"></i>
                 ${isYT ? 'YouTube Short' : (isGDrive ? 'Drive Vertical' : 'Reel / 9:16')}
               </span>
-              <button onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'vertical')" class="text-emerald-400 hover:underline font-semibold flex items-center gap-1">
+              <button onclick="playInModal('${playType}', '${jsArg(playSrc)}', '${jsArg(video.title)}', 'vertical')" class="text-emerald-400 hover:underline font-semibold flex items-center gap-1">
                 Preview HD <i data-lucide="external-link" class="w-3 h-3"></i>
               </button>
             </div>
@@ -1210,28 +955,25 @@
           <!-- 16:9 Aspect Video Container -->
           <div 
             class="relative w-full aspect-video bg-black overflow-hidden cursor-pointer"
-            onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'horizontal')"
+            onclick="playInModal('${playType}', '${jsArg(playSrc)}', '${jsArg(video.title)}', 'horizontal')"
           >
             ${isGDrive ? `
-              <iframe 
-                src="https://drive.google.com/file/d/${gId}/preview" 
-                class="w-full h-full pointer-events-none"
-                frameborder="0"
-              ></iframe>
+              <div class="absolute inset-0 bg-gradient-to-br from-dark-800 to-dark-950 flex items-center justify-center"><i data-lucide="film" class="w-10 h-10 text-slate-600"></i></div>
+              <img src="https://drive.google.com/thumbnail?id=${gId}&sz=w800" alt="${esc(video.title)}" loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'">
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition-all">
-                <div class="w-13 h-13 rounded-full bg-emerald-500 text-white flex items-center justify-center p-3.5 shadow-glow group-hover:scale-110 transition-transform">
+                <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center p-3.5 shadow-glow group-hover:scale-110 transition-transform">
                   <i data-lucide="play" class="w-6 h-6 fill-white ml-0.5"></i>
                 </div>
               </div>
             ` : (isYT ? `
               <img 
                 src="${thumb}" 
-                alt="${video.title}" 
+                alt="${esc(video.title)}" 
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 onerror="this.src='https://i.ytimg.com/vi/${ytId}/hqdefault.jpg'"
               >
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition-all">
-                <div class="w-13 h-13 rounded-full bg-brand-accent text-dark-950 flex items-center justify-center p-3.5 shadow-glow-cyan group-hover:scale-110 transition-transform">
+                <div class="w-12 h-12 rounded-full bg-brand-accent text-dark-950 flex items-center justify-center p-3.5 shadow-glow-cyan group-hover:scale-110 transition-transform">
                   <i data-lucide="play" class="w-6 h-6 fill-dark-950 ml-0.5"></i>
                 </div>
               </div>
@@ -1257,30 +999,23 @@
               </button>
             `)}
 
+            ${editControls('horizontal', video.id)}
+
             <!-- Top Badge -->
             <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-dark-950/80 backdrop-blur-md border border-white/10 text-[11px] font-bold text-brand-accent">
-              ${video.badge || '16:9 Showcase'}
+              ${esc(video.badge || '16:9 Showcase')}
             </div>
-
-            <!-- Remove Button -->
-            <button 
-              onclick="event.stopPropagation(); removeVideo('horizontal', '${video.id}')" 
-              class="opacity-0 group-hover:opacity-100 absolute top-3 right-3 p-1.5 rounded-lg bg-red-500/80 hover:bg-red-500 text-white transition-opacity z-20"
-              title="Remove video"
-            >
-              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
-            </button>
           </div>
 
           <!-- Bottom Info -->
           <div class="p-4 flex-1 flex flex-col justify-between bg-dark-900/90 border-t border-dark-border">
-            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-brand-accent transition-colors">${video.title}</h4>
+            <h4 class="text-sm font-bold text-white line-clamp-2 group-hover:text-brand-accent transition-colors">${esc(video.title)}</h4>
             <div class="flex items-center justify-between mt-3 pt-2 border-t border-dark-border text-xs text-slate-400">
               <span class="flex items-center gap-1 text-[11px]">
                 <i data-lucide="${isGDrive ? 'folder-video' : (isYT ? 'youtube' : 'film')}" class="w-3.5 h-3.5 ${isGDrive ? 'text-emerald-400' : (isYT ? 'text-red-500' : 'text-brand-accent')}"></i>
                 ${isGDrive ? 'Google Drive' : (isYT ? 'YouTube 16:9' : 'Cinematic HD')}
               </span>
-              <button onclick="playInModal('${playType}', '${playSrc}', '${(video.title || '').replace(/'/g, "\\'")}', 'horizontal')" class="text-brand-accent hover:underline font-semibold flex items-center gap-1">
+              <button onclick="playInModal('${playType}', '${jsArg(playSrc)}', '${jsArg(video.title)}', 'horizontal')" class="text-brand-accent hover:underline font-semibold flex items-center gap-1">
                 Watch 16:9 <i data-lucide="play-circle" class="w-3.5 h-3.5"></i>
               </button>
             </div>
@@ -1315,7 +1050,7 @@
         if (verticalItems.length > 0) {
           verticalContainer.innerHTML = verticalItems.map(v => buildVerticalCard(v)).join('');
         } else {
-          verticalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No vertical videos in this category yet. Click "+ Add New Video" above to add one!</div>`;
+          verticalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No vertical videos in this category yet.</div>`;
         }
       }
 
@@ -1325,7 +1060,7 @@
         if (horizontalItems.length > 0) {
           horizontalContainer.innerHTML = horizontalItems.map(v => buildHorizontalCard(v)).join('');
         } else {
-          horizontalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No horizontal videos in this category yet. Click "+ Add New Video" above to add one!</div>`;
+          horizontalContainer.innerHTML = `<div class="col-span-full py-8 text-center text-slate-500 text-sm">No horizontal videos in this category yet.</div>`;
         }
       }
 
@@ -1375,7 +1110,7 @@
           <iframe 
             class="w-full h-full" 
             src="https://drive.google.com/file/d/${gId}/preview" 
-            title="${title}" 
+            title="${esc(title)}" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
@@ -1391,7 +1126,7 @@
           <iframe 
             class="w-full h-full" 
             src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" 
-            title="${title}" 
+            title="${esc(title)}" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
@@ -1468,109 +1203,243 @@
       menu.classList.toggle('hidden');
     }
 
-    // SETTINGS MODAL (WHATSAPP CONFIG)
-    function openSettingsModal() {
-      const data = getPortfolioData();
-      document.getElementById('cfgPhoneInput').value = data.config.whatsappNumber || '';
-      document.getElementById('cfgMsgInput').value = data.config.defaultMessage || '';
-      document.getElementById('settingsModal').classList.remove('hidden');
-    }
-
-    function closeSettingsModal() {
-      document.getElementById('settingsModal').classList.add('hidden');
-    }
-
-    function saveWhatsAppConfig() {
-      const phone = document.getElementById('cfgPhoneInput').value.trim().replace(/[^0-9]/g, '');
-      const msg = document.getElementById('cfgMsgInput').value.trim();
-
-      if (!phone) {
-        alert("Please enter a valid phone number with country code.");
-        return;
-      }
-
-      const data = getPortfolioData();
-      data.config.whatsappNumber = phone;
-      if (msg) data.config.defaultMessage = msg;
-      savePortfolioData(data);
-      closeSettingsModal();
-      alert("WhatsApp details updated successfully!");
-    }
-
-    // ADD NEW VIDEO MODAL & HANDLER
-    function openAddVideoModal() {
-      document.getElementById('addVideoModal').classList.remove('hidden');
-    }
-
-    function closeAddVideoModal() {
-      document.getElementById('addVideoModal').classList.add('hidden');
-      document.getElementById('addVideoForm').reset();
-    }
-
-    function handleAddNewVideo(e) {
-      e.preventDefault();
-      const format = document.getElementById('newVideoFormat').value; // 'vertical' | 'horizontal'
-      const category = document.getElementById('newVideoCategory').value; // 'youtube' | 'commercials' | 'events' | 'social'
-      const title = document.getElementById('newVideoTitle').value.trim();
-      const url = document.getElementById('newVideoUrl').value.trim();
-      const defaultBadge = format === 'vertical' ? 'Vertical Short' : '16:9 Showcase';
-      const badge = document.getElementById('newVideoBadge').value.trim() || defaultBadge;
-
-      const data = getPortfolioData();
-      const newId = 'vid-' + Date.now();
-
-      // Detect Google Drive link
-      let gDriveId = '';
-      const isGDrive = url.includes('drive.google.com');
-      if (isGDrive) {
-        const match = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/);
-        gDriveId = match ? match[1] : '';
-      }
-
-      // Detect YouTube link (Supports Shorts and regular watch URLs)
-      let ytId = '';
-      if (url.includes('youtube.com') || url.includes('youtu.be')) {
-        const match = url.match(/(?:shorts\/|youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/);
-        ytId = (match && match[1].length === 11) ? match[1] : '';
-      }
-
-      const newEntry = {
-        id: newId,
-        title: title,
-        category: category,
-        badge: badge,
-        videoUrl: url,
-        youtubeId: ytId,
-        gDriveId: gDriveId,
-        format: format,
-        type: isGDrive ? "gdrive" : (ytId ? "youtube" : "mp4"),
-        thumbnail: ytId ? `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg` : ''
-      };
-
-      if (!data[format]) data[format] = [];
-      data[format].unshift(newEntry);
-
-      savePortfolioData(data);
-      closeAddVideoModal();
-      alert(`"${title}" added successfully to your ${format === 'vertical' ? 'Vertical (9:16)' : 'Horizontal (16:9)'} showcase!`);
-    }
-
-    function removeVideo(format, id) {
-      if (!confirm("Are you sure you want to remove this video from your showcase?")) return;
-      const data = getPortfolioData();
-      if (data[format]) {
-        data[format] = data[format].filter(v => v.id !== id);
-        savePortfolioData(data);
-      }
-    }
-
     // INITIALIZATION ON PAGE LOAD
     document.addEventListener('DOMContentLoaded', () => {
+      if (EDIT) initEditMode();
       document.getElementById('currentYear').innerText = new Date().getFullYear();
       renderPortfolio();
-      updateWhatsAppLinks();
       if (window.lucide) lucide.createIcons();
     });
   </script>
 </body>
 </html>
+
+# DynamicMediaPro Portfolio
+
+Portfolio site for Adejumo Oluwatobi Emmanuel, video editor and motion specialist.
+A single static page (`index.html`): no build step, no dependencies to install.
+
+## Publish with GitHub Pages
+
+1. Create a new repository on GitHub (for example `dynamicmediapro`).
+2. Upload `index.html`, `videos.js`, `.nojekyll` and `README.md` to the repository root.
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+5. Choose the `main` branch and the `/ (root)` folder, then click **Save**.
+6. After a minute or two the site is live at `https://<your-username>.github.io/<repo-name>/`.
+
+Tip: a repository named `<your-username>.github.io` is served at `https://<your-username>.github.io/`.
+
+## Editing videos
+
+The videos are listed in `videos.js`. There are two ways to change them.
+
+**Edit on the page (easiest)**
+
+1. Open your live site with `?edit` added to the address, for example `https://<your-username>.github.io/<repo-name>/?edit`.
+2. Use the buttons that appear on each video: move earlier/later, edit, remove. Use **+ Add video** to add one (paste a Google Drive, YouTube, or direct `.mp4` link).
+3. Click **Export videos.js**. A file downloads.
+4. In your GitHub repository, upload that file to replace `videos.js`, then commit. The live site updates in a minute or two.
+
+Your changes are a private draft in your browser until you export and upload. Visitors never see the edit tools or your draft, even if they add `?edit`.
+
+**Edit by hand**
+
+Open `videos.js` on GitHub (pencil icon) and change the lists. Each video needs a unique `id`, a `title`, a `category` (`youtube`, `commercials`, `events` or `social`), a `badge`, and one source: `youtubeId`, `gDriveId` with `type: "gdrive"`, or `videoUrl` with `type: "mp4"`. Videos go in the `vertical` (9:16) or `horizontal` (16:9) list.
+
+Google Drive files must be shared as "Anyone with the link can view".
+
+The WhatsApp number is in the `wa.me` links in `index.html` (search for `2348077140068`).
+
+## Notes
+
+- The logo and some video previews are hosted on `framerusercontent.com`. If you later delete the Framer project, download those files, add them to this repo, and update the links.
+- Fonts, Tailwind and the icon set load from public CDNs, so the page needs an internet connection.
+
+// DynamicMediaPro portfolio videos.
+//
+// Two ways to change this file:
+//   1. Easiest: open your site with ?edit at the end of the address
+//      (for example https://YOUR-SITE/?edit), change videos on the page,
+//      click "Export videos.js", then upload the downloaded file to GitHub
+//      to replace this one.
+//   2. By hand: edit the lists below.
+//
+// Each video needs: id (unique), title, category (youtube | commercials | events | social),
+// badge (small label), and one source: youtubeId, gDriveId + type "gdrive", or videoUrl + type "mp4".
+window.PORTFOLIO = {
+  "config": {
+    "whatsappNumber": "2348077140068",
+    "defaultMessage": "Hi Oluwatobi, I saw your portfolio and would like to discuss a video project!"
+  },
+  "vertical": [
+    {
+      "id": "vert-dr-shocares",
+      "title": "Dr Shocares AD",
+      "category": "commercials",
+      "badge": "Vertical Ad",
+      "videoUrl": "https://drive.google.com/file/d/16L-uQ941jwmL4r4-lYqpsLXuokPqMDm4/preview",
+      "gDriveId": "16L-uQ941jwmL4r4-lYqpsLXuokPqMDm4",
+      "type": "gdrive",
+      "format": "vertical"
+    },
+    {
+      "id": "vert-drive-1",
+      "title": "Vertical Project 1",
+      "category": "social",
+      "badge": "Vertical Video",
+      "videoUrl": "https://drive.google.com/file/d/1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn/preview",
+      "gDriveId": "1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn",
+      "type": "gdrive",
+      "format": "vertical"
+    },
+    {
+      "id": "vert-drive-2",
+      "title": "Vertical Project 2",
+      "category": "social",
+      "badge": "Vertical Video",
+      "videoUrl": "https://drive.google.com/file/d/1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ/preview",
+      "gDriveId": "1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ",
+      "type": "gdrive",
+      "format": "vertical"
+    },
+    {
+      "id": "vert-drive-3",
+      "title": "Vertical Project 3",
+      "category": "social",
+      "badge": "Vertical Video",
+      "videoUrl": "https://drive.google.com/file/d/1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV/preview",
+      "gDriveId": "1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV",
+      "type": "gdrive",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-doc",
+      "title": "Documentary Style Narrative Edit",
+      "category": "youtube",
+      "badge": "Documentary",
+      "youtubeId": "_MWHzfT5i4I",
+      "thumbnail": "https://i.ytimg.com/vi_webp/_MWHzfT5i4I/maxresdefault.webp",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-edu",
+      "title": "Educational Masterclass & Motion Graphics",
+      "category": "youtube",
+      "badge": "Educational Edit",
+      "youtubeId": "5mBPGoumDKg",
+      "thumbnail": "https://i.ytimg.com/vi_webp/5mBPGoumDKg/maxresdefault.webp",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-podcast",
+      "title": "Podcast Production & Multi-Cam Sync",
+      "category": "youtube",
+      "badge": "Podcast Edit",
+      "youtubeId": "tFp4hLnucwE",
+      "thumbnail": "https://i.ytimg.com/vi_webp/tFp4hLnucwE/maxresdefault.webp",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-breakdown",
+      "title": "Cinematic Talking Head & Story Breakdown",
+      "category": "youtube",
+      "badge": "Color Graded",
+      "youtubeId": "RmQOzE9JIq0",
+      "thumbnail": "https://i.ytimg.com/vi_webp/RmQOzE9JIq0/maxresdefault.webp",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-automation",
+      "title": "YouTube Automation & B-Roll Narrative",
+      "category": "youtube",
+      "badge": "Storytelling",
+      "youtubeId": "taIsswdS73c",
+      "thumbnail": "https://i.ytimg.com/vi_webp/taIsswdS73c/maxresdefault.webp",
+      "format": "vertical"
+    },
+    {
+      "id": "horiz-yt-vlog",
+      "title": "High-Energy Vlog & Travel Cinematic",
+      "category": "youtube",
+      "badge": "Pacing & SFX",
+      "youtubeId": "j8OrkJtSIuY",
+      "thumbnail": "https://i.ytimg.com/vi_webp/j8OrkJtSIuY/sddefault.webp",
+      "format": "vertical"
+    }
+  ],
+  "horizontal": [
+    {
+      "id": "horiz-sonora",
+      "title": "Sonora - Commercial Video Advert",
+      "category": "commercials",
+      "badge": "Brand Commercial",
+      "videoUrl": "https://drive.google.com/file/d/1lQosWmCQHMWML47PlO_qZXL2311hNC6d/preview",
+      "gDriveId": "1lQosWmCQHMWML47PlO_qZXL2311hNC6d",
+      "type": "gdrive",
+      "poster": "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-drive-2",
+      "title": "Aliviar Hotel Commercial",
+      "category": "commercials",
+      "badge": "Hotel Commercial",
+      "videoUrl": "https://drive.google.com/file/d/1sxWrFU0hgDlp4PNnQLwJhfZFHduLVg_1/preview",
+      "gDriveId": "1sxWrFU0hgDlp4PNnQLwJhfZFHduLVg_1",
+      "type": "gdrive",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-drive-3",
+      "title": "EPE Resort Ad",
+      "category": "commercials",
+      "badge": "Resort Ad",
+      "videoUrl": "https://drive.google.com/file/d/1g6ctSYTEKZvppQs2ds4AZx-uL9v5Z2VX/preview",
+      "gDriveId": "1g6ctSYTEKZvppQs2ds4AZx-uL9v5Z2VX",
+      "type": "gdrive",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-drive-5",
+      "title": "First 11 AD",
+      "category": "commercials",
+      "badge": "Ad",
+      "videoUrl": "https://drive.google.com/file/d/1BDkrB2sOLAVBqQP0_L_2hUgkGHfgCu5s/preview",
+      "gDriveId": "1BDkrB2sOLAVBqQP0_L_2hUgkGHfgCu5s",
+      "type": "gdrive",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-wedding",
+      "title": "Wedding Highlights - Cinematic Film",
+      "category": "events",
+      "badge": "Wedding Highlight",
+      "videoUrl": "https://drive.google.com/file/d/1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM/preview",
+      "gDriveId": "1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM",
+      "type": "gdrive",
+      "poster": "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-drive-1",
+      "title": "Featured Project 1",
+      "category": "social",
+      "badge": "Video Edit",
+      "videoUrl": "https://drive.google.com/file/d/1GCc9k4f5D3svwIaVxlSLfs0tZZrSxPmY/preview",
+      "gDriveId": "1GCc9k4f5D3svwIaVxlSLfs0tZZrSxPmY",
+      "type": "gdrive",
+      "format": "horizontal"
+    },
+    {
+      "id": "horiz-drive-4",
+      "title": "Featured Project 4",
+      "category": "social",
+      "badge": "Video Edit",
+      "videoUrl": "https://drive.google.com/file/d/11yS6xm5liRFb3e10URWUZnpecQX-UlYP/preview",
+      "gDriveId": "11yS6xm5liRFb3e10URWUZnpecQX-UlYP",
+      "type": "gdrive",
+      "format": "horizontal"
+    }
+  ]
+};
