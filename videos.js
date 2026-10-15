@@ -1,14 +1,5 @@
-// DynamicMediaPro portfolio videos.
-//
-// Two ways to change this file:
-//   1. Easiest: open your site with ?edit at the end of the address
-//      (for example https://YOUR-SITE/?edit), change videos on the page,
-//      click "Export videos.js", then upload the downloaded file to GitHub
-//      to replace this one.
-//   2. By hand: edit the lists below.
-//
-// Each video needs: id (unique), title, category (youtube | commercials | events | social),
-// badge (small label), and one source: youtubeId, gDriveId + type "gdrive", or videoUrl + type "mp4".
+// DynamicMediaPro portfolio videos (exported from edit mode).
+// Upload this file to GitHub to replace videos.js.
 window.PORTFOLIO = {
   "config": {
     "whatsappNumber": "2348077140068",
@@ -27,42 +18,13 @@ window.PORTFOLIO = {
     },
     {
       "id": "vert-drive-1",
-      "title": "Vertical Project 1",
-      "category": "social",
-      "badge": "Vertical Video",
-      "videoUrl": "https://drive.google.com/file/d/1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn/preview",
-      "gDriveId": "1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn",
-      "type": "gdrive",
-      "format": "vertical"
-    },
-    {
-      "id": "vert-drive-2",
-      "title": "Vertical Project 2",
-      "category": "social",
-      "badge": "Vertical Video",
-      "videoUrl": "https://drive.google.com/file/d/1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ/preview",
-      "gDriveId": "1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ",
-      "type": "gdrive",
-      "format": "vertical"
-    },
-    {
-      "id": "vert-drive-3",
-      "title": "Vertical Project 3",
-      "category": "social",
-      "badge": "Vertical Video",
-      "videoUrl": "https://drive.google.com/file/d/1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV/preview",
-      "gDriveId": "1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV",
-      "type": "gdrive",
-      "format": "vertical"
-    },
-    {
-      "id": "horiz-yt-doc",
-      "title": "Documentary Style Narrative Edit",
+      "title": "Youtube Shorts",
       "category": "youtube",
-      "badge": "Documentary",
-      "youtubeId": "_MWHzfT5i4I",
-      "thumbnail": "https://i.ytimg.com/vi_webp/_MWHzfT5i4I/maxresdefault.webp",
-      "format": "vertical"
+      "badge": "Vertical Video",
+      "format": "vertical",
+      "type": "gdrive",
+      "gDriveId": "1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn",
+      "videoUrl": "https://drive.google.com/file/d/1hQ4K2okkTY74rwOIHq6aHS41hN-fElvn/preview"
     },
     {
       "id": "horiz-yt-edu",
@@ -74,6 +36,26 @@ window.PORTFOLIO = {
       "format": "vertical"
     },
     {
+      "id": "vert-drive-2",
+      "title": "Youtube Shorts",
+      "category": "social",
+      "badge": "Vertical Video",
+      "format": "vertical",
+      "type": "gdrive",
+      "gDriveId": "1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ",
+      "videoUrl": "https://drive.google.com/file/d/1UabC6iWqSudIgv94SNO-zyItL2VpXbuZ/preview"
+    },
+    {
+      "id": "vid-1792066655251",
+      "title": "Jack Daniels Recap",
+      "category": "social",
+      "badge": "Vertical Short",
+      "format": "vertical",
+      "type": "gdrive",
+      "gDriveId": "1i-34x5GWAc2n8QM_MFOvSZ-jiQwtr0lb",
+      "videoUrl": "https://drive.google.com/file/d/1i-34x5GWAc2n8QM_MFOvSZ-jiQwtr0lb/preview"
+    },
+    {
       "id": "horiz-yt-podcast",
       "title": "Podcast Production & Multi-Cam Sync",
       "category": "youtube",
@@ -83,31 +65,24 @@ window.PORTFOLIO = {
       "format": "vertical"
     },
     {
+      "id": "vert-drive-3",
+      "title": "Youtube Shorts",
+      "category": "social",
+      "badge": "Vertical Video",
+      "format": "vertical",
+      "type": "gdrive",
+      "gDriveId": "1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV",
+      "videoUrl": "https://drive.google.com/file/d/1G5ir5jO9-SKfPe43LZgdM7y5UTrX4NFV/preview"
+    },
+    {
       "id": "horiz-yt-breakdown",
       "title": "Cinematic Talking Head & Story Breakdown",
       "category": "youtube",
-      "badge": "Color Graded",
+      "badge": "Vertical Short",
+      "format": "vertical",
+      "type": "youtube",
       "youtubeId": "RmQOzE9JIq0",
-      "thumbnail": "https://i.ytimg.com/vi_webp/RmQOzE9JIq0/maxresdefault.webp",
-      "format": "vertical"
-    },
-    {
-      "id": "horiz-yt-automation",
-      "title": "YouTube Automation & B-Roll Narrative",
-      "category": "youtube",
-      "badge": "Storytelling",
-      "youtubeId": "taIsswdS73c",
-      "thumbnail": "https://i.ytimg.com/vi_webp/taIsswdS73c/maxresdefault.webp",
-      "format": "vertical"
-    },
-    {
-      "id": "horiz-yt-vlog",
-      "title": "High-Energy Vlog & Travel Cinematic",
-      "category": "youtube",
-      "badge": "Pacing & SFX",
-      "youtubeId": "j8OrkJtSIuY",
-      "thumbnail": "https://i.ytimg.com/vi_webp/j8OrkJtSIuY/sddefault.webp",
-      "format": "vertical"
+      "thumbnail": "https://i.ytimg.com/vi/RmQOzE9JIq0/hqdefault.jpg"
     }
   ],
   "horizontal": [
@@ -121,6 +96,56 @@ window.PORTFOLIO = {
       "type": "gdrive",
       "poster": "https://framerusercontent.com/images/LUkmo3gFVQOfp5kvltA05Mc6K4.png",
       "format": "horizontal"
+    },
+    {
+      "id": "vid-1792066739196",
+      "title": "Wedding Highlights",
+      "category": "events",
+      "badge": "16:9 Showcase",
+      "format": "horizontal",
+      "type": "gdrive",
+      "gDriveId": "1AGwIxXd9CU-wxkT9J3gGAGY6lYoSTIWc",
+      "videoUrl": "https://drive.google.com/file/d/1AGwIxXd9CU-wxkT9J3gGAGY6lYoSTIWc/preview"
+    },
+    {
+      "id": "vid-1792066577245",
+      "title": "40th Birthday Highlights",
+      "category": "events",
+      "badge": "16:9 Showcase",
+      "format": "horizontal",
+      "type": "gdrive",
+      "gDriveId": "190r94zuk8aG2B9wRmD7afJwsblKV9HrQ",
+      "videoUrl": "https://drive.google.com/file/d/190r94zuk8aG2B9wRmD7afJwsblKV9HrQ/preview"
+    },
+    {
+      "id": "horiz-yt-doc",
+      "title": "Documentary Style Narrative Edit",
+      "category": "commercials",
+      "badge": "Documentary",
+      "format": "horizontal",
+      "type": "youtube",
+      "youtubeId": "_MWHzfT5i4I",
+      "thumbnail": "https://i.ytimg.com/vi/_MWHzfT5i4I/hqdefault.jpg"
+    },
+    {
+      "id": "vid-1792066481666",
+      "title": "Beyond Fitness Hangout",
+      "category": "events",
+      "badge": "16:9 Showcase",
+      "format": "horizontal",
+      "type": "gdrive",
+      "gDriveId": "1XalQ8RgzvZ5kmS6kTLbYyJ6c3rXWLKEo",
+      "videoUrl": "https://drive.google.com/file/d/1XalQ8RgzvZ5kmS6kTLbYyJ6c3rXWLKEo/preview"
+    },
+    {
+      "id": "horiz-yt-vlog",
+      "title": "High-Energy Vlog & Travel Cinematic",
+      "category": "commercials",
+      "badge": "Pacing & SFX",
+      "format": "horizontal",
+      "type": "youtube",
+      "youtubeId": "j8OrkJtSIuY",
+      "thumbnail": "https://i.ytimg.com/vi/j8OrkJtSIuY/hqdefault.jpg"
     },
     {
       "id": "horiz-drive-2",
@@ -143,45 +168,14 @@ window.PORTFOLIO = {
       "format": "horizontal"
     },
     {
-      "id": "horiz-drive-5",
-      "title": "First 11 AD",
-      "category": "commercials",
-      "badge": "Ad",
-      "videoUrl": "https://drive.google.com/file/d/1BDkrB2sOLAVBqQP0_L_2hUgkGHfgCu5s/preview",
-      "gDriveId": "1BDkrB2sOLAVBqQP0_L_2hUgkGHfgCu5s",
-      "type": "gdrive",
-      "format": "horizontal"
-    },
-    {
       "id": "horiz-wedding",
       "title": "Wedding Highlights - Cinematic Film",
       "category": "events",
       "badge": "Wedding Highlight",
-      "videoUrl": "https://drive.google.com/file/d/1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM/preview",
+      "format": "horizontal",
+      "type": "gdrive",
       "gDriveId": "1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM",
-      "type": "gdrive",
-      "poster": "https://framerusercontent.com/images/kZ7dlQJeQxYgHTpY3tV5y4tSE.png",
-      "format": "horizontal"
-    },
-    {
-      "id": "horiz-drive-1",
-      "title": "Featured Project 1",
-      "category": "social",
-      "badge": "Video Edit",
-      "videoUrl": "https://drive.google.com/file/d/1GCc9k4f5D3svwIaVxlSLfs0tZZrSxPmY/preview",
-      "gDriveId": "1GCc9k4f5D3svwIaVxlSLfs0tZZrSxPmY",
-      "type": "gdrive",
-      "format": "horizontal"
-    },
-    {
-      "id": "horiz-drive-4",
-      "title": "Featured Project 4",
-      "category": "social",
-      "badge": "Video Edit",
-      "videoUrl": "https://drive.google.com/file/d/11yS6xm5liRFb3e10URWUZnpecQX-UlYP/preview",
-      "gDriveId": "11yS6xm5liRFb3e10URWUZnpecQX-UlYP",
-      "type": "gdrive",
-      "format": "horizontal"
+      "videoUrl": "https://drive.google.com/file/d/1q56jnYU9bcr-E9J7yM4ECm1OrSKV_YhM/preview"
     }
   ]
 };
